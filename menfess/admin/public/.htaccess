@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase public_html/menfess/admin/public/
+
+# Redirect requests to the index.php file
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?page=$1 [L,QSA]
+
+# Redirect to 404 page for non-existent routes
+ErrorDocument 404 public_html/menfess/admin/public/404.php

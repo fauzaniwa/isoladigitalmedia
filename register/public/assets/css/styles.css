@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Chinese Rocks';
+    src: url('./assets/font/chinese-rocks-rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply Chinese Rocks font to all heading elements */
+@layer base {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Chinese Rocks', sans-serif;
+    }
+}
+
+.custom-file-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.custom-file-button {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.form-container {
+    display: none;
+}
+
+.form-container.active {
+    display: block;
+}

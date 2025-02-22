@@ -1,0 +1,162 @@
+:root {
+    --primary-font: 'Caveat', cursive;
+    --pink-main: #F44379;
+    --pink-mid: #FF66A1;
+    --pink-light: #FCD9E4;
+    --white: #ffffff;
+  }
+  
+  .font-primary {
+    font-family: var(--primary-font);
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(180deg, var(--pink-main), var(--pink-light));
+  }
+  
+  .bg-main {
+    background-color: var(--pink-main);
+  }
+
+  .bg-secondary {
+    background-color: var(--pink-light);
+  }
+  
+  .btn-primary {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-yellow {
+    background-color: var(--pink-mid);
+    color: black;
+    /* Teks default hitam */
+  }
+  
+  .btn-yellow:hover {
+    background-color: var(--pink-light);
+    color: var(--white);
+    /* Teks berubah menjadi putih saat hover */
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--pink-light);
+  }
+  
+  .card-hover:hover {
+    background-color: var(--pink-light);
+  }
+  
+  .card-animated:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .floatingtoogle {
+    z-index: 99;
+  }
+  
+  .btn-primary {
+    background-color: var(--pink-main);
+    color: var(--white);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--pink-light);
+    transform: scale(1.05);
+  }
+  
+  .rounded-full {
+    border: 2px solid var(--pink-main);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animated-card {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  .batch-card {
+    display: none;
+    opacity: 0;
+  }
+  
+  .batch-card.active {
+    display: block;
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  @keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-slider {
+    display: flex;
+    animation: slider 20s linear infinite;
+  }
+  
+  /* Mobile Carousel 1 */
+  @media (max-width: 768px) {
+    #mobile-carousel {
+      display: flex;
+      animation: slide-right 15s linear infinite; /* Renamed to slide-right */
+    }
+  
+    @keyframes slide-right {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  
+    .container {
+      overflow: hidden; /* Prevent overflow for carousel */
+    }
+  
+    .min-w-[80%] {
+      min-width: 80%;
+    }
+  }
+  
+  /* Mobile Carousel 2 */
+  @media (max-width: 768px) {
+    #mobile-carousel2 {
+      display: flex;
+      animation: slide-left 15s linear infinite; /* Renamed to slide-left */
+    }
+  
+    @keyframes slide-left {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+  
+    .container {
+      overflow: hidden; /* Prevent overflow for carousel */
+    }
+  
+    .min-w-[80%] {
+      min-width: 80%;
+    }
+  }
+  
