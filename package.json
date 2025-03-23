@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.15",
+    "@tailwindcss/postcss": "^4.0.15",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.15"
+  },
+  "name": "isoladigitalmedia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "@tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fauzaniwa/isoladigitalmedia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fauzaniwa/isoladigitalmedia/issues"
+  },
+  "homepage": "https://github.com/fauzaniwa/isoladigitalmedia#readme",
+  "description": ""
+}
