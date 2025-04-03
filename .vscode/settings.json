@@ -3,6 +3,5 @@
   "editor.formatOnSave": true,
   "liveServer.settings.port": 5501,
   "editor.wordWrapColumn": 240,
-  "prettier.printWidth": 240,
-  "terminal.integrated.cwd": "\"terminal.integrated.cwd\": \"E:\\MIFTAHUL FADLI\\tugas\\IDM\\isoladigitalmedia\""
+  "prettier.printWidth": 240
 }

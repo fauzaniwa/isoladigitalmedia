@@ -15,77 +15,159 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8851872691835002" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body class="bg-black">
     <!-- Navbar Awal -->
-    <header class="bg-white/60 supports-backdrop-blur:bg-white/60 fixed w-full flex items-center z-20">
-      <div class="container py-6 backdrop-blur-md lg:border-b lg:border-slate-900/10">
-        <div class="flex items-center justify-between relative">
-          <div class="px-4">
-            <a href="#hero"><img src="dist/img/Logo/Logo IDM Black.svg" alt="" class="h-6 opacity-75 hover:opacity-100" /></a>
-          </div>
-          <div class="flex items-center px-10">
-            <button id="hamburger" name="hamburger" type="button" class="p-1 block absolute md:hidden">
-              <span class="hamburger-line transition duration-300 ease-in-out origin-top-right"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-right"></span>
-            </button>
-            <nav
-              id="nav-menu"
-              class="hidden absolute bg-white/60 supports-backdrop-blur:bg-white/60 shadow-lg rounded-lg max-w-[250px] w-full right-0 top-16 md:block md:static md:bg-transparent md:max-w-full md:shadow-none md:rounded-none"
-            >
-              <ul class="block md:flex">
-                <li class="group hover:bg-black/20 md:hover:bg-transparent md:hover:opacity-25 py-4 md:py-0 px-6">
-                  <a href="#about" class="text-base md:text-black duration-300 ease-in-out flex">About</a>
-                </li>
-                <li class="group hover:bg-black/20 md:hover:bg-transparent md:hover:opacity-25 py-4 md:py-0 px-6">
-                  <a href="#department" class="text-base md:text-black duration-300 ease-in-out flex">Department</a>
-                </li>
-                <li class="group hover:bg-black/20 md:hover:bg-transparent md:hover:opacity-25 py-4 md:py-0 px-6">
-                  <a href="#featured" class="text-base md:text-black duration-300 ease-in-out flex">Featured</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+    <header class="fixed top-0 left-0 w-full backdrop-blur-lg bg-white/60 p-6 z-20">
+      <div class="container mx-auto flex items-center justify-between">
+        <a href="#hero">
+          <img src="dist/img/Logo/Logo IDM Black.svg" alt="" class="h-6 opacity-75 hover:opacity-100" />
+        </a>
+        <nav class="hidden md:flex space-x-6 text-black font-medium">
+          <a href="#" class="hover:underline">About</a>
+          <a href="#" class="hover:underline">Department</a>
+          <a href="#" class="hover:underline">Seentesa</a>
+          <a href="#" class="hover:underline">IsolaFess</a>
+        </nav>
+
+        <!-- Tombol Hamburger -->
+        <button id="hamburger" name="hamburger" type="button" class="p-1 block absolute md:hidden">
+          <span class="hamburger-line transition duration-300 ease-in-out origin-top-right"></span>
+          <span class="hamburger-line transition duration-300 ease-in-out"></span>
+          <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-right"></span>
+        </button>
       </div>
+
+      <!-- Mobile Menu -->
+      <nav id="nav-menu" class="hidden flex-col items-center text-white font-medium bg-black/80 p-4 space-y-4">
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Department</a>
+        <a href="#" class="hover:underline">Seentesa</a>
+        <a href="#" class="hover:underline">IsolaFess</a>
+      </nav>
     </header>
     <!-- Navbar Akhir -->
 
-    <div class="h-[300px] w-[300px] bg-purple-600 rounded-full z-2 right-0 blur-[300px] md:blur-[200px] fixed"></div>
-    <div class="h-[300px] w-[300px] bg-purple-600 scale-0 md:scale-100 rounded-full z-2 bottom-0 blur-[200px] fixed"></div>
-
     <!-- Breadcrumb -->
-    <nav class="bg-white/50 backdrop-blur-md py-4 px-6 md:px-16 border-b border-gray-300 fixed top-16 w-full z-40 text-white">
+    <section class="py-4 px-6 md:px-16 absolute top-20 w-full z-30 text-white">
       <div class="container mx-auto text-gray-600 text-sm">
         <ul class="flex items-center space-x-2">
           <li>
             <a href="/" class="hover:underline hover:text-gray-800">Home</a>
           </li>
           <li>/</li>
-          <li>
-            <a href="/department" class="hover:underline hover:text-gray-800">Department</a>
-          </li>
-          <li>/</li>
-          <li class="text-gray-400">Design</li>
+          <li class="text-gray-400">Departement Design</li>
         </ul>
-      </div>
-    </nav>
-
-    <!-- Cover Section -->
-    <section class="flex h-screen bg-black max-w-full overflow-hidden mx-auto items-center justify-center" id="hero">
-      <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
-        <div class="md:order-1 flex-1 flex flex-col items-center md:items-start">
-          <img src="./dist/img/Desain/icon desain.png" alt="Department Title" class="w-48 md:w-64" />
-          <p class="mt-2 md:mt-4 text-gray-300 max-w-md text-center md:text-left">Lorem Ipsum Dolor Sit Amet Consectetur.</p>
-        </div>
-        <div class="flex-1 flex justify-center">
-          <img src="./dist/img/Desain/cover desain.png" alt="Department Cover" class="w-full h-auto rounded-lg max-w-3xl" />
-        </div>
       </div>
     </section>
 
-    <section class="w-full max-w-2xl mx-auto flex justify-center items-center bg-black">
-      <img src="./dist/img/div/our.png" alt="Our Division" class="w-auto h-16" />
+    <div class="h-[300px] w-[300px] bg-purple-600 rounded-full z-2 right-0 blur-[300px] md:blur-[200px] fixed"></div>
+    <div class="h-[300px] w-[300px] bg-purple-600 scale-0 md:scale-100 rounded-full z-2 bottom-0 blur-[200px] fixed"></div>
+
+    <!-- Cover Section -->
+    <section class="max-w-screen-xl mx-auto px-4 pt-24 mt-20 flex flex-col items-center">
+      <div class="flex flex-col md:flex-row items-center justify-center lg:gap-16">
+        <!-- Bagian kiri -->
+        <div class="flex flex-col space-y-4 md:w-auto text-center">
+          <!-- Gambar di atas -->
+          <img src="./dist/img/title/icon desain.png" alt="icon desain" class="mx-auto w-auto" />
+          <!-- Teks di bawah gambar -->
+          <p class="text-white">Lorem Ipsum Dolor Sit Amet Consectetur.</p>
+        </div>
+
+        <!-- Bagian kanan -->
+        <img src="./dist/img/cover/cover desain.png" alt="cover desain" class="object-cover rounded-2xl" />
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="my-24 flex justify-center">
+      <button class="border border-white px-62 py-5 rounded-full font-bold text-2xl text-white">Our Division</button>
+    </div>
+
+    <!-- Illustration Division -->
+    <section class="max-w-screen-xl mx-auto px-4 py-8 mt-24">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8 pb-24">
+        <!-- Bagian kiri (Gambar) -->
+        <div class="md:w-1/2">
+          <img src="./dist/img/cover/gd.png" alt="Deskripsi Gambar" class="w-auto object-cover rounded-2xl" />
+        </div>
+
+        <!-- Bagian kanan (Teks) -->
+        <div class="text-white text-center md:text-left">
+          <h2 class="text-2xl font-bold">Illustration</h2>
+          <p class="text-base text-gray-300 mt-2">Lorem Ipsum Dolor Sit Amet Consectetur.</p>
+        </div>
+      </div>
+
+      <!-- Judul -->
+      <div class="flex justify-center mb-8">
+        <img src="./dist/img/title/our worked.png" alt="Our Worked" class="w-64 h-auto" />
+      </div>
+
+      <!-- Grid Karya -->
+      <div class="mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+          <!-- Card Karya -->
+          <div class="p-4 rounded-lg">
+            <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover rounded-lg" />
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:bg-slate-300">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 rounded-lg">
+            <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover rounded-lg" />
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:bg-slate-300">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 rounded-lg">
+            <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover rounded-lg" />
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:bg-slate-300">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 rounded-lg">
+            <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover rounded-lg" />
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:bg-slate-300">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 rounded-lg">
+            <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover rounded-lg" />
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:bg-slate-300">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 rounded-lg">
+            <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover rounded-lg" />
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:bg-slate-300">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+        </div>
+        <!-- Tombol Lihat Lebih Banyak -->
+        <div class="mt-12 flex justify-center">
+          <button class="bg-gradient-to-r from-violet-700 to-blue-500 text-white px-6 py-3 lg:px-26 rounded-xl hover:opacity-70">Viewmore</button>
+        </div>
+      </div>
     </section>
 
     <!-- Footer Awal -->
@@ -143,5 +225,12 @@
     <!-- Footer Akhir -->
     <script src="https://unpkg.com/kursor"></script>
     <script src="dist/js/script.js"></script>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
