@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <style>
+    .masonry {
+      column-gap: 1rem;
+    }
+
+    .masonry img,
+    .placeholder {
+      break-inside: avoid;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body class="bg-black p-4">
+  <header class="fixed top-0 left-0 w-full backdrop-blur-lg bg-white/60 p-6 z-20">
+    <div class="container mx-auto flex items-center justify-between">
+      <a href="#hero">
+        <img src="dist/img/Logo/Logo IDM Black.svg" alt="" class="h-6 opacity-75 hover:opacity-100" />
+      </a>
+      <nav class="hidden md:flex space-x-6 text-black font-medium">
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Department</a>
+        <a href="#" class="hover:underline">Seentesa</a>
+        <a href="#" class="hover:underline">IsolaFess</a>
+      </nav>
+
+      <!-- Tombol Hamburger -->
+      <button id="hamburger" name="hamburger" type="button" class="p-1 block absolute md:hidden">
+        <span class="hamburger-line transition duration-300 ease-in-out origin-top-right"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-right"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="nav-menu" class="hidden flex-col items-center text-white font-medium bg-black/80 p-4 space-y-4">
+      <a href="#" class="hover:underline">About</a>
+      <a href="#" class="hover:underline">Department</a>
+      <a href="#" class="hover:underline">Seentesa</a>
+      <a href="#" class="hover:underline">IsolaFess</a>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb -->
+  <section class="py-4 px-6 md:px-16 pt-28 flex top-20 w-full z-30 text-white">
+    <div class="container mx-auto text-white text-sm">
+      <ul class="flex items-center space-x-2">
+        <li>
+          <a href="/" class="hover:underline hover:text-gray-400">Home</a>
+        </li>
+        <li>/</li>
+        <li class="text-yellow-600">Galeri</li>
+      </ul>
+    </div>
+  </section>
+  <!-- Breadcrumb Akhir -->
+
+
+  <h1 class="pt-5 text-3xl mb-6 text-center text-white font-bolo">GALERI</h1>
+  <div id="gallery" class="flex gap-4"></div>
+  <div id="sentinel" class="h-10"></div>
+  <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 items-center justify-center z-50 hidden">
+    <img id="lightbox-img" class="w-auto max-w-[90vw] max-h-[80vh] rounded-lg shadow-2xl object-contain" />
+
+  </div>
+
+
+  <script type="module" src="/dist/js/main.js"></script>
+</body>
+
+
+</html>

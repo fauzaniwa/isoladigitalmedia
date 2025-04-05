@@ -1,355 +1,400 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-adsense-account" content="ca-pub-8851872691835002" />
-    <title>Isola Digital Media</title>
-    <link rel="icon" href="dist/img/Logo/Switch-Black.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="dist/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8851872691835002" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <style>
-      .swiper {
-        width: 100%;
-        max-width: 900px;
-        height: 500px;
-      }
 
-      .swiper-slide {
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.5s ease-in-out, opacity 0.5s;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-adsense-account" content="ca-pub-8851872691835002" />
+  <title>Isola Digital Media</title>
+  <link rel="icon" href="dist/img/Logo/Switch-Black.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="dist/output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8851872691835002"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <style>
+    .swiper {
+      width: 100%;
+      max-width: 900px;
+      height: 500px;
+    }
 
-      .swiper-slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    .swiper-slide {
+      border-radius: 20px;
+      overflow: hidden;
+      transition: transform 0.5s ease-in-out, opacity 0.5s;
+    }
 
-      /* Efek gambar tengah lebih besar */
-      .swiper-slide-active {
-        transform: scale(1.1);
-        z-index: 10;
-      }
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-      /* Efek blur dan transparan untuk gambar samping */
-      .swiper-slide:not(.swiper-slide-active) {
-        opacity: 0.5;
-      }
-    </style>
-  </head>
+    /* Efek gambar tengah lebih besar */
+    .swiper-slide-active {
+      transform: scale(1.1);
+      z-index: 10;
+    }
 
-  <body class="bg-black notCursor">
-    <!-- Navbar Awal -->
-    <header class="fixed top-0 left-0 w-full backdrop-blur-lg bg-white/60 p-6 z-20">
-      <div class="container mx-auto flex items-center justify-between">
-        <a href="#hero">
-          <img src="dist/img/Logo/Logo IDM Black.svg" alt="" class="h-6 opacity-75 hover:opacity-100" />
-        </a>
-        <nav class="hidden md:flex space-x-6 text-black font-medium">
-          <a href="#" class="hover:underline">About</a>
-          <a href="#" class="hover:underline">Department</a>
-          <a href="#" class="hover:underline">Seentesa</a>
-          <a href="#" class="hover:underline">IsolaFess</a>
-        </nav>
+    /* Efek blur dan transparan untuk gambar samping */
+    .swiper-slide:not(.swiper-slide-active) {
+      opacity: 0.5;
+    }
+  </style>
+</head>
 
-        <!-- Tombol Hamburger -->
-        <button id="hamburger" name="hamburger" type="button" class="p-1 block absolute md:hidden">
-          <span class="hamburger-line transition duration-300 ease-in-out origin-top-right"></span>
-          <span class="hamburger-line transition duration-300 ease-in-out"></span>
-          <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-right"></span>
-        </button>
-      </div>
-
-      <!-- Mobile Menu -->
-      <nav id="nav-menu" class="hidden flex-col items-center text-white font-medium bg-black/80 p-4 space-y-4">
+<body class="bg-black notCursor">
+  <!-- Navbar Awal -->
+  <header class="fixed top-0 left-0 w-full backdrop-blur-lg bg-white/60 p-6 z-20">
+    <div class="container mx-auto flex items-center justify-between">
+      <a href="#hero">
+        <img src="dist/img/Logo/Logo IDM Black.svg" alt="" class="h-6 opacity-75 hover:opacity-100" />
+      </a>
+      <nav class="hidden md:flex space-x-6 text-black font-medium">
         <a href="#" class="hover:underline">About</a>
         <a href="#" class="hover:underline">Department</a>
         <a href="#" class="hover:underline">Seentesa</a>
         <a href="#" class="hover:underline">IsolaFess</a>
       </nav>
-    </header>
-    <!-- Navbar Akhir -->
 
-    <!-- Hero -->
-    <section class="flex h-screen bg-black max-w-full overflow-hidden" id="hero">
-      <video src="dist/video/introidm3.mp4" autoplay loop muted class="absolute bottom-0 right-0 z-0 h-full w-full object-cover"></video>
-      <div class="w-full mx-24 my-auto z-10 flex flex-col items-start">
-        <img src="dist/img/Logo/Logo IDM.svg" alt="" class="w-72" />
-        <h1 class="text-xl sm:text-2xl font-plus text-white font-light">A Place For Creative Artist & Designer</h1>
-        <button class="mt-8 bg-gradient-to-br from-[#5B286C] to-[#2953DB] hover:saturate-150 transition duration-300 rounded-full py-4 px-8 font-plus text-md text-white font-medium flex items-center gap-4">
-          <a href="https://www.instagram.com/isoladigitalmedia_/" target="_blank" class="flex gap-2 items-center"
-            ><img src="dist/img/About/Instagram.svg" class="h-4" alt="" /><span class="text-xs sm:text-base">Check Our Social Media</span>
-          </a>
-        </button>
+      <!-- Tombol Hamburger -->
+      <button id="hamburger" name="hamburger" type="button" class="p-1 block absolute md:hidden">
+        <span class="hamburger-line transition duration-300 ease-in-out origin-top-right"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-right"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="nav-menu" class="hidden flex-col items-center text-white font-medium bg-black/80 p-4 space-y-4">
+      <a href="#" class="hover:underline">About</a>
+      <a href="#" class="hover:underline">Department</a>
+      <a href="#" class="hover:underline">Seentesa</a>
+      <a href="#" class="hover:underline">IsolaFess</a>
+    </nav>
+  </header>
+  <!-- Navbar Akhir -->
+
+  <!-- Hero -->
+  <section class="flex h-screen bg-black max-w-full overflow-hidden" id="hero">
+    <video src="dist/video/introidm3.mp4" autoplay loop muted
+      class="absolute bottom-0 right-0 z-0 h-full w-full object-cover"></video>
+    <div class="w-full mx-24 my-auto z-10 flex flex-col items-start">
+      <img src="dist/img/Logo/Logo IDM.svg" alt="" class="w-72" />
+      <h1 class="text-xl sm:text-2xl font-plus text-white font-light">A Place For Creative Artist & Designer</h1>
+      <button
+        class="mt-8 bg-gradient-to-br from-[#5B286C] to-[#2953DB] hover:saturate-150 transition duration-300 rounded-full py-4 px-8 font-plus text-md text-white font-medium flex items-center gap-4">
+        <a href="https://www.instagram.com/isoladigitalmedia_/" target="_blank" class="flex gap-2 items-center"><img
+            src="dist/img/About/Instagram.svg" class="h-4" alt="" /><span class="text-xs sm:text-base">Check Our Social
+            Media</span>
+        </a>
+      </button>
+    </div>
+  </section>
+  <!-- Hero Akhir -->
+  <!-- About Us Awal -->
+  <section class="max-w-full" id="about">
+    <div class="max-w-full h-[850px] bg-cover bg-center pt-24"
+      style="background-image: url(dist/img/cover/Background.png)">
+      <div class="flex w-full h-[160px] justify-center pt-8">
+        <div class="h-full aspect-square flex justify-center items-center relative">
+          <img src="dist/img/About/Mini.svg" alt="" class="h-1/5" />
+          <img src="dist/img/About/Circle.svg" alt="" class="absolute motion-safe:animate-spin-slow" />
+        </div>
       </div>
-    </section>
-    <!-- Hero Akhir -->
-    <!-- About Us Awal -->
-    <section class="max-w-full" id="about">
-      <div class="max-w-full h-[850px] bg-cover bg-center pt-24" style="background-image: url(dist/img/cover/Background.png)">
-        <div class="flex w-full h-[160px] justify-center pt-8">
-          <div class="h-full aspect-square flex justify-center items-center relative">
-            <img src="dist/img/About/Mini.svg" alt="" class="h-1/5" />
-            <img src="dist/img/About/Circle.svg" alt="" class="absolute motion-safe:animate-spin-slow" />
-          </div>
-        </div>
-        <div class="flex w-full justify-center">
-          <div class="flex flex-col justify-center text-center items-center pt-8">
-            <h1 class="text-2xl sm:text-4xl font-bolota text-white">WHAT IS</h1>
-            <h1 class="text-2xl sm:text-4xl font-plus text-white">ISOLA DIGITAL MEDIA?</h1>
-            <div class="w-[60%] pt-8">
-              <p class="font-plus font-light text-white">
-                Isola Digital Media atau yang dikenal dengan IDM merupakan salah satu UKM (Unit Kegiatan Mahasiswa) tingkat fakultas berbasis pada Fakultas Pendidikan Seni dan Desain yang didirikan sejak tahun 2021. Isola Digital Media
-                merupakan wadah mahasiswa/i FPSD UPI untuk belajar dan berkarya bersama untu mengasah kemampuan dengan fokus pada bidang digital
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About Us Akhir -->
-    <!--  Department Awal -->
-    <section class="max-w-full bg-black pt-12 md:pt-16 lg:pt-12 mb-[100px]" id="department">
-      <div class="w-4/5 mx-auto">
-        <!-- Judul -->
-        <div class="flex w-full pt-24 mb-[-32px] sm:mb-10 md:mb-0 lg:mb-12">
-          <img src="dist/img/title/Department Title1.svg" class="mx-auto w-[50px] sm:w-[100px] md:w-1/4 scale-90" alt="Department Title" />
-        </div>
-
-        <!-- Wrapper departemen -->
-        <div class="w-full mb-12 lg:mb-20 flex flex-col md:flex-row gap-8 sm:gap-10 lg:gap-12 xl:gap-16 justify-center items-center">
-          <!-- Card 1: Design -->
-          <div class="w-full h-[320px] sm:h-[480px] md:w-1/3 md:h-[280px] lg:h-[480px] xl:h-[640px] relative group overflow-hidden flex items-center">
-            <!-- Background image -->
-            <div class="w-full h-full bg-cover bg-center transition duration-300 lg:saturate-0 lg:group-hover:saturate-100" style="background-image: url('dist/img/Department/DesignNew.png')"></div>
-            <!-- Image overlay -->
-            <div class="w-full flex mx-auto absolute">
-              <img src="dist/img/Department/TDesignNew.png" alt="Text Design" class="w-3/5 mx-auto lg:saturate-0 lg:group-hover:saturate-100 lg:group-hover:scale-110 transition duration-1000" />
-            </div>
-          </div>
-
-          <!-- Card 2: Multimedia -->
-          <div class="w-full h-[320px] sm:h-[480px] md:w-1/3 md:h-[280px] lg:h-[480px] xl:h-[640px] relative group overflow-hidden flex items-center">
-            <!-- Background image -->
-            <div class="w-full h-full bg-cover bg-center transition duration-300 lg:saturate-0 lg:group-hover:saturate-100" style="background-image: url('dist/img/Department/MultimediaNew.png')"></div>
-            <!-- Image overlay -->
-            <div class="w-full flex py-auto absolute">
-              <img src="dist/img/Department/TMultimediaNew.png" alt="Text Multimedia" class="w-3/5 mx-auto lg:saturate-0 lg:group-hover:saturate-100 lg:group-hover:scale-110 transition duration-1000" />
-            </div>
-          </div>
-
-          <!-- Card 3: Game -->
-          <div class="w-full h-[320px] sm:h-[480px] md:w-1/3 md:h-[280px] lg:h-[480px] xl:h-[640px] relative group overflow-hidden flex items-center">
-            <!-- Background image -->
-            <div class="w-full h-full bg-cover bg-center transition duration-300 lg:saturate-0 lg:group-hover:saturate-100" style="background-image: url('dist/img/Department/GameNew.png')"></div>
-            <!-- Image overlay -->
-            <div class="w-full flex py-auto absolute">
-              <img src="dist/img/Department/TGameNew.png" alt="Text Game" class="w-3/5 mx-auto lg:saturate-0 lg:group-hover:saturate-100 lg:group-hover:scale-110 transition duration-1000" />
-            </div>
-          </div>
-
-          <!-- Card 4: Cinematic Photography -->
-          <div class="w-full h-[320px] sm:h-[480px] md:w-1/3 md:h-[280px] lg:h-[480px] xl:h-[640px] relative group overflow-hidden flex items-center">
-            <!-- Background image -->
-            <div class="w-full h-full bg-cover bg-center transition duration-300 lg:saturate-0 lg:group-hover:saturate-100" style="background-image: url('dist/img/Department/CinemaNew.png')"></div>
-            <!-- Image overlay -->
-            <div class="w-full flex py-auto absolute">
-              <img src="dist/img/Department/TCinemaNew.png" alt="Text Cinema" class="w-3/5 mx-auto lg:saturate-0 lg:group-hover:saturate-100 lg:group-hover:scale-110 transition duration-1000" />
-            </div>
+      <div class="flex w-full justify-center">
+        <div class="flex flex-col justify-center text-center items-center pt-8">
+          <h1 class="text-2xl sm:text-4xl font-bolota text-white">WHAT IS</h1>
+          <h1 class="text-2xl sm:text-4xl font-plus text-white">ISOLA DIGITAL MEDIA?</h1>
+          <div class="w-[60%] pt-8">
+            <p class="font-plus font-light text-white">
+              Isola Digital Media atau yang dikenal dengan IDM merupakan salah satu UKM (Unit Kegiatan Mahasiswa)
+              tingkat fakultas berbasis pada Fakultas Pendidikan Seni dan Desain yang didirikan sejak tahun 2021. Isola
+              Digital Media
+              merupakan wadah mahasiswa/i FPSD UPI untuk belajar dan berkarya bersama untu mengasah kemampuan dengan
+              fokus pada bidang digital
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <!--  Department Akhir -->
-
-    <!-- Featured -->
-    <section class="max-w-screen-xl mx-auto px-4 py-8 mt-24">
+    </div>
+  </section>
+  <!-- About Us Akhir -->
+  <!--  Department Awal -->
+  <section class="max-w-full bg-black pt-12 md:pt-16 lg:pt-12 mb-[100px]" id="department">
+    <div class="w-4/5 mx-auto">
       <!-- Judul -->
-      <div class="flex justify-center mb-12">
-        <img src="./dist/img/title/Featured Title1.svg" alt="Our Worked" class="h-[169px] scale-90" />
+      <div class="flex w-full pt-24 mb-[-32px] sm:mb-10 md:mb-0 lg:mb-12">
+        <img src="dist/img/title/Department Title1.svg" class="mx-auto w-[50px] sm:w-[100px] md:w-1/4 scale-90"
+          alt="Department Title" />
       </div>
 
-      <!-- Grid Karya -->
-      <div class="mx-auto">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-          <!-- Card Karya -->
-          <div class="p-4 rounded-lg">
-            <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover rounded-lg" />
-            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
-            <p class="text-base text-gray-400">Nama Artist</p>
-            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:bg-slate-300">
-              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
-              Commission
-            </button>
+      <!-- Wrapper departemen -->
+      <div
+        class="w-full mb-12 lg:mb-20 flex flex-col md:flex-row gap-8 sm:gap-10 lg:gap-12 xl:gap-16 justify-center items-center">
+        <!-- Card 1: Design -->
+        <div
+          class="w-full h-[320px] sm:h-[480px] md:w-1/3 md:h-[280px] lg:h-[480px] xl:h-[640px] relative group overflow-hidden flex items-center">
+          <!-- Background image -->
+          <div
+            class="w-full h-full bg-cover bg-center transition duration-300 lg:saturate-0 lg:group-hover:saturate-100"
+            style="background-image: url('dist/img/Department/DesignNew.png')"></div>
+          <!-- Image overlay -->
+          <div class="w-full flex mx-auto absolute">
+            <img src="dist/img/Department/TDesignNew.png" alt="Text Design"
+              class="w-3/5 mx-auto lg:saturate-0 lg:group-hover:saturate-100 lg:group-hover:scale-110 transition duration-1000" />
           </div>
-          <div class="p-4 rounded-lg">
-            <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover rounded-lg" />
-            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
-            <p class="text-base text-gray-400">Nama Artist</p>
-            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:bg-slate-300">
-              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
-              Commission
-            </button>
+        </div>
+
+        <!-- Card 2: Multimedia -->
+        <div
+          class="w-full h-[320px] sm:h-[480px] md:w-1/3 md:h-[280px] lg:h-[480px] xl:h-[640px] relative group overflow-hidden flex items-center">
+          <!-- Background image -->
+          <div
+            class="w-full h-full bg-cover bg-center transition duration-300 lg:saturate-0 lg:group-hover:saturate-100"
+            style="background-image: url('dist/img/Department/MultimediaNew.png')"></div>
+          <!-- Image overlay -->
+          <div class="w-full flex py-auto absolute">
+            <img src="dist/img/Department/TMultimediaNew.png" alt="Text Multimedia"
+              class="w-3/5 mx-auto lg:saturate-0 lg:group-hover:saturate-100 lg:group-hover:scale-110 transition duration-1000" />
           </div>
-          <div class="p-4 rounded-lg">
-            <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover rounded-lg" />
-            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
-            <p class="text-base text-gray-400">Nama Artist</p>
-            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:bg-slate-300">
-              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
-              Commission
-            </button>
+        </div>
+
+        <!-- Card 3: Game -->
+        <div
+          class="w-full h-[320px] sm:h-[480px] md:w-1/3 md:h-[280px] lg:h-[480px] xl:h-[640px] relative group overflow-hidden flex items-center">
+          <!-- Background image -->
+          <div
+            class="w-full h-full bg-cover bg-center transition duration-300 lg:saturate-0 lg:group-hover:saturate-100"
+            style="background-image: url('dist/img/Department/GameNew.png')"></div>
+          <!-- Image overlay -->
+          <div class="w-full flex py-auto absolute">
+            <img src="dist/img/Department/TGameNew.png" alt="Text Game"
+              class="w-3/5 mx-auto lg:saturate-0 lg:group-hover:saturate-100 lg:group-hover:scale-110 transition duration-1000" />
+          </div>
+        </div>
+
+        <!-- Card 4: Cinematic Photography -->
+        <div
+          class="w-full h-[320px] sm:h-[480px] md:w-1/3 md:h-[280px] lg:h-[480px] xl:h-[640px] relative group overflow-hidden flex items-center">
+          <!-- Background image -->
+          <div
+            class="w-full h-full bg-cover bg-center transition duration-300 lg:saturate-0 lg:group-hover:saturate-100"
+            style="background-image: url('dist/img/Department/CinemaNew.png')"></div>
+          <!-- Image overlay -->
+          <div class="w-full flex py-auto absolute">
+            <img src="dist/img/Department/TCinemaNew.png" alt="Text Cinema"
+              class="w-3/5 mx-auto lg:saturate-0 lg:group-hover:saturate-100 lg:group-hover:scale-110 transition duration-1000" />
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <!--  Department Akhir -->
 
-    <!-- Seentesa -->
-    <section class="bg-black text-white py-12 px-6 md:py-16 lg:py-24 mt-24 mb-12" id="seentesa">
-      <div class="w-4/5 mx-auto flex flex-col items-center text-center">
-        <!-- Image -->
-        <img src="dist/img/seentesa/title/seentesa.png" alt="SEENTESA AKARASA" class="w-full max-w-[600px] mb-6 md:mb-8" />
+  <!-- Featured -->
+  <section class="max-w-screen-xl mx-auto px-4 py-8 mt-24">
+    <!-- Judul -->
+    <div class="flex justify-center mb-12">
+      <img src="./dist/img/title/Featured Title1.svg" alt="Our Worked" class="h-[169px] scale-90" />
+    </div>
 
-        <!-- Body Text -->
-        <p class="text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
-          SEENTESA berkembang dengan karakter yang kuat dan konsisten, namun tetap bebas berekspresi. Visual yang diperlihatkan menarik mata, penuh ekspresi dan kian tumbuh bersama audiens. Informasi tidak hanya tersampaikan, namun mengalir
-          dengan cara yang santai, dekat, dan mudah dipahami. Lebih dari sekadar berbeda, SEENTESA hadir untuk dirasakan.
-          <br /><br />
-        </p>
-      </div>
-    </section>
-
-    <!-- SECTION CAROUSEL -->
-    <section class="flex flex-col items-center text-center">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="dist/img/seentesa/cover/1.png" alt="Image 1" /></div>
-          <div class="swiper-slide"><img src="dist/img/seentesa/cover/2.png" alt="Image 2" /></div>
-          <div class="swiper-slide"><img src="dist/img/seentesa/cover/3.png" alt="Image 3" /></div>
-          <div class="swiper-slide"><img src="dist/img/seentesa/cover/4.png" alt="Image 4" /></div>
-          <div class="swiper-slide"><img src="dist/img/seentesa/cover/5.png" alt="Image 5" /></div>
+    <!-- Grid Karya -->
+    <div class="mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        <!-- Card Karya -->
+        <div class="p-4 rounded-lg">
+          <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover rounded-lg" />
+          <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+          <p class="text-base text-gray-400">Nama Artist</p>
+          <button
+            class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:bg-slate-300">
+            <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+            Commission
+          </button>
+        </div>
+        <div class="p-4 rounded-lg">
+          <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover rounded-lg" />
+          <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+          <p class="text-base text-gray-400">Nama Artist</p>
+          <button
+            class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:bg-slate-300">
+            <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+            Commission
+          </button>
+        </div>
+        <div class="p-4 rounded-lg">
+          <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover rounded-lg" />
+          <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+          <p class="text-base text-gray-400">Nama Artist</p>
+          <button
+            class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:bg-slate-300">
+            <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+            Commission
+          </button>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- BUTTON -->
-      <button class="mt-6 px-6 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-500 transition">Check Out!</button>
-    </section>
-    <!-- END SECTION CAROUSEL -->
+  <!-- Seentesa -->
+  <section class="bg-black text-white py-12 px-6 md:py-16 lg:py-24 mt-24 mb-12" id="seentesa">
+    <div class="w-4/5 mx-auto flex flex-col items-center text-center">
+      <!-- Image -->
+      <img src="dist/img/seentesa/title/seentesa.png" alt="SEENTESA AKARASA"
+        class="w-full max-w-[600px] mb-6 md:mb-8" />
 
-    <!-- Calendar -->
-    <section class="bg-black flex justify-center items-center mt-24 mb-12">
-      <div class="w-full max-w-4xl p-6">
-        <h1 class="text-white text-center text-6xl font-bold mb-12">JADWAL</h1>
-        <div class="bg-pink-600 p-6 rounded-xl">
-          <!-- Card 1 -->
-          <div class="flex items-center justify-between bg-pink-600 p-4 rounded-lg mb-4">
-            <div class="flex items-center gap-4">
-              <div class="text-white text-6xl font-extrabold text-center">
-                15
-                <p class="text-white text-sm font-bold pt-1">April 2025</p>
-              </div>
-              <div>
-                <h2 class="text-white font-bold text-lg">Lorem Ipsum</h2>
-                <p class="text-white text-sm">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat...</p>
-              </div>
+      <!-- Body Text -->
+      <p class="text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
+        SEENTESA berkembang dengan karakter yang kuat dan konsisten, namun tetap bebas berekspresi. Visual yang
+        diperlihatkan menarik mata, penuh ekspresi dan kian tumbuh bersama audiens. Informasi tidak hanya tersampaikan,
+        namun mengalir
+        dengan cara yang santai, dekat, dan mudah dipahami. Lebih dari sekadar berbeda, SEENTESA hadir untuk dirasakan.
+        <br /><br />
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION CAROUSEL -->
+  <section class="flex flex-col items-center text-center">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="dist/img/seentesa/cover/1.png" alt="Image 1" /></div>
+        <div class="swiper-slide"><img src="dist/img/seentesa/cover/2.png" alt="Image 2" /></div>
+        <div class="swiper-slide"><img src="dist/img/seentesa/cover/3.png" alt="Image 3" /></div>
+        <div class="swiper-slide"><img src="dist/img/seentesa/cover/4.png" alt="Image 4" /></div>
+        <div class="swiper-slide"><img src="dist/img/seentesa/cover/5.png" alt="Image 5" /></div>
+      </div>
+    </div>
+
+    <!-- BUTTON -->
+    <button class="mt-6 px-6 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-500 transition">Check
+      Out!</button>
+  </section>
+  <!-- END SECTION CAROUSEL -->
+
+  <!-- Calendar -->
+  <section class="bg-black flex justify-center items-center mt-24 mb-12">
+    <div class="w-full max-w-4xl p-6">
+      <h1 class="text-white text-center text-6xl font-bold mb-12">JADWAL</h1>
+      <div class="bg-pink-600 p-6 rounded-xl">
+        <!-- Card 1 -->
+        <div class="flex items-center justify-between bg-pink-600 p-4 rounded-lg mb-4">
+          <div class="flex items-center gap-4">
+            <div class="text-white text-6xl font-extrabold text-center">
+              15
+              <p class="text-white text-sm font-bold pt-1">April 2025</p>
             </div>
-            <button class="bg-yellow-400 text-black px-4 py-2 rounded-lg font-bold">Detail Acara</button>
+            <div>
+              <h2 class="text-white font-bold text-lg">Lorem Ipsum</h2>
+              <p class="text-white text-sm">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                consequat...</p>
+            </div>
           </div>
-          <!-- Card 2 -->
-          <div class="flex items-center justify-between bg-pink-600 p-4 rounded-lg">
-            <div class="flex items-center gap-4">
-              <div class="text-white text-6xl font-extrabold text-center">
-                16
-                <p class="text-white text-sm font-bold pt-1">April 2025</p>
-              </div>
-              <div>
-                <h2 class="text-white font-bold text-lg">Lorem Ipsum</h2>
-                <p class="text-white text-sm">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat...</p>
-              </div>
+          <button class="bg-yellow-400 text-black px-4 py-2 rounded-lg font-bold">Detail Acara</button>
+        </div>
+        <!-- Card 2 -->
+        <div class="flex items-center justify-between bg-pink-600 p-4 rounded-lg">
+          <div class="flex items-center gap-4">
+            <div class="text-white text-6xl font-extrabold text-center">
+              16
+              <p class="text-white text-sm font-bold pt-1">April 2025</p>
             </div>
-            <button class="bg-yellow-400 text-black px-4 py-2 rounded-lg font-bold">Detail Acara</button>
+            <div>
+              <h2 class="text-white font-bold text-lg">Lorem Ipsum</h2>
+              <p class="text-white text-sm">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                consequat...</p>
+            </div>
+          </div>
+          <button class="bg-yellow-400 text-black px-4 py-2 rounded-lg font-bold">Detail Acara</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Calendar -->
+
+  <!-- Footer Awal -->
+  <footer class="bg-[#111111]">
+    <div class="flex flex-col md:flex-row lg:justify-normal pt-10 pb-20 px-12 lg:px-20 gap-8 lg:gap-20">
+      <div><img src="dist/img/Logo/Logo IDM.svg" alt="" class="h-1/2" /></div>
+      <div class="flex flex-col md:flex-row gap-12">
+        <div class="flex flex-col text-white">
+          <h1 class="font-plus text-xl font-bold mb-4">Contact Us</h1>
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-2 hover:opacity-75">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-mail">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <a href="mailto:isoladigitalmedia@gmail.com" class="font-plus"
+                target="_blank">isoladigitalmedia@gmail.com</a>
+            </div>
+            <div class="flex gap-2 hover:opacity-75">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <a href="https://g.co/kgs/ocmEj8J" class="font-plus" target="_blank">Fakultas Pendidikan Seni & Desain</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col text-white">
+          <h1 class="font-plus text-xl font-bold mb-4">Social Media</h1>
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-2 hover:opacity-75">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <a href="https://www.instagram.com/isoladigitalmedia_/" class="font-plus" target="_blank">Instagram</a>
+            </div>
+            <div class="flex gap-2 hover:opacity-75">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <a href="https://www.linkedin.com/company/isola-digital-media/mycompany/" class="font-plus"
+                target="_blank">LinkedIn</a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Calendar -->
+    </div>
+    <!-- Footer Bawah -->
+    <div class="flex justify-center items-center py-5 border-t-2 border-white">
+      <h1 class="font-plus text-white">© Isola Digital Media 2021 All rights reserved.</h1>
+    </div>
+  </footer>
+  <!-- Footer Akhir -->
+  <script src="https://unpkg.com/kursor"></script>
+  <script type="module" src="dist/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
 
-    <!-- Footer Awal -->
-    <footer class="bg-[#111111]">
-      <div class="flex flex-col md:flex-row lg:justify-normal pt-10 pb-20 px-12 lg:px-20 gap-8 lg:gap-20">
-        <div><img src="dist/img/Logo/Logo IDM.svg" alt="" class="h-1/2" /></div>
-        <div class="flex flex-col md:flex-row gap-12">
-          <div class="flex flex-col text-white">
-            <h1 class="font-plus text-xl font-bold mb-4">Contact Us</h1>
-            <div class="flex flex-col gap-4">
-              <div class="flex gap-2 hover:opacity-75">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                  <polyline points="22,6 12,13 2,6" />
-                </svg>
-                <a href="mailto:isoladigitalmedia@gmail.com" class="font-plus" target="_blank">isoladigitalmedia@gmail.com</a>
-              </div>
-              <div class="flex gap-2 hover:opacity-75">
-                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <a href="https://g.co/kgs/ocmEj8J" class="font-plus" target="_blank">Fakultas Pendidikan Seni & Desain</a>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col text-white">
-            <h1 class="font-plus text-xl font-bold mb-4">Social Media</h1>
-            <div class="flex flex-col gap-4">
-              <div class="flex gap-2 hover:opacity-75">
-                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
-                <a href="https://www.instagram.com/isoladigitalmedia_/" class="font-plus" target="_blank">Instagram</a>
-              </div>
-              <div class="flex gap-2 hover:opacity-75">
-                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                  <rect x="2" y="9" width="4" height="12"></rect>
-                  <circle cx="4" cy="4" r="2"></circle>
-                </svg>
-                <a href="https://www.linkedin.com/company/isola-digital-media/mycompany/" class="font-plus" target="_blank">LinkedIn</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Footer Bawah -->
-      <div class="flex justify-center items-center py-5 border-t-2 border-white">
-        <h1 class="font-plus text-white">© Isola Digital Media 2021 All rights reserved.</h1>
-      </div>
-    </footer>
-    <!-- Footer Akhir -->
-    <script src="https://unpkg.com/kursor"></script>
-    <script src="dist/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        centeredSlides: true,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-      });
-    </script>
-  </body>
 </html>

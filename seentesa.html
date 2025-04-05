@@ -1,274 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-adsense-account" content="ca-pub-8851872691835002" />
-    <title>Seentesa</title>
-    <link rel="icon" href="dist/img/Logo/Switch-Black.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="dist/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8851872691835002" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <style>
-      .swiper {
-        width: 100%;
-        max-width: 1100px;
-        height: 600px;
-      }
 
-      .swiper-slide {
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.5s ease-in-out, opacity 0.5s;
-        position: relative;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-adsense-account" content="ca-pub-8851872691835002" />
+  <title>Seentesa</title>
+  <link rel="icon" href="dist/img/Logo/Switch-Black.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="dist/output.css" />
+  <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8851872691835002"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <style>
+    .swiper {
+      width: 100%;
+      max-width: 1100px;
+      height: 600px;
+    }
 
-      .swiper-slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    .swiper-slide {
+      border-radius: 20px;
+      overflow: hidden;
+      transition: transform 0.5s ease-in-out, opacity 0.5s;
+      position: relative;
+    }
 
-      .swiper-slide-active {
-        transform: scale(1.1);
-        z-index: 10;
-      }
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-      .swiper-slide:not(.swiper-slide-active) {
-        opacity: 0.5;
-      }
+    .swiper-slide-active {
+      transform: scale(1.1);
+      z-index: 10;
+    }
 
-      .title-container {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        background: rgba(0, 0, 0, 0.7);
-        padding: 10px 20px;
-        border-radius: 10px;
-        opacity: 0;
-        transition: opacity 0.5s;
-      }
+    .swiper-slide:not(.swiper-slide-active) {
+      opacity: 0.5;
+    }
 
-      .swiper-slide-active .title-container {
-        opacity: 1;
-      }
+    .title-container {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
+      border-radius: 10px;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
 
-      /* Gallery Carousel */
-      .gallery-swiper {
-        width: 100%;
-        max-width: 1900px;
-        height: 400px;
-      }
+    .swiper-slide-active .title-container {
+      opacity: 1;
+    }
 
-      .gallery-swiper .swiper-slide {
-        width: auto;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    /* Gallery Carousel */
+    .gallery-swiper {
+      width: 100%;
+      max-width: 1900px;
+      height: 400px;
+    }
 
-      .gallery-swiper .swiper-slide img {
-        height: 100%;
-        width: auto;
-        border-radius: 15px;
-      }
-    </style>
-  </head>
-  <body class="bg-black">
-    <!-- Navbar Awal -->
-    <header class="fixed top-0 left-0 w-full backdrop-blur-lg bg-white/60 p-6 z-20">
-      <div class="container mx-auto flex items-center justify-between">
-        <a href="#hero">
-          <img src="dist/img/Logo/Logo IDM Black.svg" alt="" class="h-6 opacity-75 hover:opacity-100" />
-        </a>
-        <nav class="hidden md:flex space-x-6 text-black font-medium">
-          <a href="#" class="hover:underline">About</a>
-          <a href="#" class="hover:underline">Department</a>
-          <a href="#" class="hover:underline">Seentesa</a>
-          <a href="#" class="hover:underline">IsolaFess</a>
-        </nav>
+    .gallery-swiper .swiper-slide {
+      width: auto;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        <!-- Tombol Hamburger -->
-        <button id="hamburger" name="hamburger" type="button" class="p-1 block absolute md:hidden">
-          <span class="hamburger-line transition duration-300 ease-in-out origin-top-right"></span>
-          <span class="hamburger-line transition duration-300 ease-in-out"></span>
-          <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-right"></span>
-        </button>
-      </div>
+    .gallery-swiper .swiper-slide img {
+      height: 100%;
+      width: auto;
+      border-radius: 15px;
+    }
+  </style>
+</head>
 
-      <!-- Mobile Menu -->
-      <nav id="nav-menu" class="hidden flex-col items-center text-white font-medium bg-black/80 p-4 space-y-4">
+<body class="bg-black">
+  <!-- Navbar Awal -->
+  <header class="fixed top-0 left-0 w-full backdrop-blur-lg bg-white/60 p-6 z-20">
+    <div class="container mx-auto flex items-center justify-between">
+      <a href="#hero">
+        <img src="dist/img/Logo/Logo IDM Black.svg" alt="" class="h-6 opacity-75 hover:opacity-100" />
+      </a>
+      <nav class="hidden md:flex space-x-6 text-black font-medium">
         <a href="#" class="hover:underline">About</a>
         <a href="#" class="hover:underline">Department</a>
         <a href="#" class="hover:underline">Seentesa</a>
         <a href="#" class="hover:underline">IsolaFess</a>
       </nav>
-    </header>
-    <!-- Navbar Akhir -->
 
-    <!-- Breadcrumb -->
-    <section class="py-4 px-6 md:px-16 absolute top-20 w-full z-30 text-white">
-      <div class="container mx-auto text-white text-sm">
-        <ul class="flex items-center space-x-2">
-          <li>
-            <a href="/" class="hover:underline hover:text-gray-400">Home</a>
-          </li>
-          <li>/</li>
-          <li class="text-yellow-600">Seentesa</li>
-        </ul>
-      </div>
-    </section>
-    <!-- Breadcrumb Akhir -->
-    <!-- Hero -->
-    <section class="flex h-screen bg-black max-w-full overflow-hidden" id="hero">
-      <video src="dist/video/videoplayback.mp4" autoplay loop muted class="absolute bottom-0 right-0 z-0 h-full w-full object-cover"></video>
-      <div class="w-full mx-24 my-auto z-10 flex flex-col items-center justify-center text-center">
-        <!-- Seentesa -->
-        <section class="text-white py-12 px-6 md:py-16 lg:py-24 mt-24 mb-12" id="seentesa">
-          <div class="w-4/5 mx-auto flex flex-col items-center text-center">
-            <!-- Image -->
-            <img src="dist/img/seentesa/title/seentesa.png" alt="SEENTESA AKARASA" class="w-full max-w-[600px] mb-6 md:mb-8" />
+      <!-- Tombol Hamburger -->
+      <button id="hamburger" name="hamburger" type="button" class="p-1 block absolute md:hidden">
+        <span class="hamburger-line transition duration-300 ease-in-out origin-top-right"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-right"></span>
+      </button>
+    </div>
 
-            <!-- Body Text -->
-            <p class="text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
-              SEENTESA berkembang dengan karakter yang kuat dan konsisten, namun tetap bebas berekspresi. Visual yang diperlihatkan menarik mata, penuh ekspresi dan kian tumbuh bersama audiens. Informasi tidak hanya tersampaikan, namun
-              mengalir dengan cara yang santai, dekat, dan mudah dipahami. Lebih dari sekadar berbeda, SEENTESA hadir untuk dirasakan.
-              <br /><br />
-            </p>
+    <!-- Mobile Menu -->
+    <nav id="nav-menu" class="hidden flex-col items-center text-white font-medium bg-black/80 p-4 space-y-4">
+      <a href="#" class="hover:underline">About</a>
+      <a href="#" class="hover:underline">Department</a>
+      <a href="#" class="hover:underline">Seentesa</a>
+      <a href="#" class="hover:underline">IsolaFess</a>
+    </nav>
+  </header>
+  <!-- Navbar Akhir -->
+
+  <!-- Breadcrumb -->
+  <section class="py-4 px-6 md:px-16 absolute top-20 w-full z-30 text-white">
+    <div class="container mx-auto text-white text-sm">
+      <ul class="flex items-center space-x-2">
+        <li>
+          <a href="/" class="hover:underline hover:text-gray-400">Home</a>
+        </li>
+        <li>/</li>
+        <li class="text-yellow-600">Seentesa</li>
+      </ul>
+    </div>
+  </section>
+  <!-- Breadcrumb Akhir -->
+  <!-- Hero -->
+  <section class="flex h-screen bg-black max-w-full overflow-hidden" id="hero">
+    <video src="dist/video/videoplayback.mp4" autoplay loop muted
+      class="absolute bottom-0 right-0 z-0 h-full w-full object-cover"></video>
+    <div class="w-full mx-24 my-auto z-10 flex flex-col items-center justify-center text-center">
+      <!-- Seentesa -->
+      <section class="text-white py-12 px-6 md:py-16 lg:py-24 mt-24 mb-12" id="seentesa">
+        <div class="w-4/5 mx-auto flex flex-col items-center text-center">
+          <!-- Image -->
+          <img src="dist/img/seentesa/title/seentesa.png" alt="SEENTESA AKARASA"
+            class="w-full max-w-[600px] mb-6 md:mb-8" />
+
+          <!-- Body Text -->
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
+            SEENTESA berkembang dengan karakter yang kuat dan konsisten, namun tetap bebas berekspresi. Visual yang
+            diperlihatkan menarik mata, penuh ekspresi dan kian tumbuh bersama audiens. Informasi tidak hanya
+            tersampaikan, namun
+            mengalir dengan cara yang santai, dekat, dan mudah dipahami. Lebih dari sekadar berbeda, SEENTESA hadir
+            untuk dirasakan.
+            <br /><br />
+          </p>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- Hero Akhir -->
+  <!-- Carousel -->
+  <section class="flex flex-col items-center text-center min-h-screen justify-center text-white">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="dist/img/seentesa/cover/1.png" alt="Image 1" />
+          <div class="title-container">
+            <h2 class="text-lg md:text-xl font-bold">Title 1</h2>
+            <p class="text-xs md:text-sm">Subtitle for Image 1</p>
           </div>
-        </section>
-      </div>
-    </section>
-    <!-- Hero Akhir -->
-    <!-- Carousel -->
-    <section class="flex flex-col items-center text-center min-h-screen justify-center text-white">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="dist/img/seentesa/cover/1.png" alt="Image 1" />
-            <div class="title-container">
-              <h2 class="text-lg md:text-xl font-bold">Title 1</h2>
-              <p class="text-xs md:text-sm">Subtitle for Image 1</p>
-            </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="dist/img/seentesa/cover/2.png" alt="Image 2" />
+          <div class="title-container">
+            <h2 class="text-lg md:text-xl font-bold">Title 2</h2>
+            <p class="text-xs md:text-sm">Subtitle for Image 2</p>
           </div>
-          <div class="swiper-slide">
-            <img src="dist/img/seentesa/cover/2.png" alt="Image 2" />
-            <div class="title-container">
-              <h2 class="text-lg md:text-xl font-bold">Title 2</h2>
-              <p class="text-xs md:text-sm">Subtitle for Image 2</p>
-            </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="dist/img/seentesa/cover/3.png" alt="Image 3" />
+          <div class="title-container">
+            <h2 class="text-lg md:text-xl font-bold">Title 3</h2>
+            <p class="text-xs md:text-sm">Subtitle for Image 3</p>
           </div>
-          <div class="swiper-slide">
-            <img src="dist/img/seentesa/cover/3.png" alt="Image 3" />
-            <div class="title-container">
-              <h2 class="text-lg md:text-xl font-bold">Title 3</h2>
-              <p class="text-xs md:text-sm">Subtitle for Image 3</p>
-            </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="dist/img/seentesa/cover/4.png" alt="Image 4" />
+          <div class="title-container">
+            <h2 class="text-lg md:text-xl font-bold">Title 4</h2>
+            <p class="text-xs md:text-sm">Subtitle for Image 4</p>
           </div>
-          <div class="swiper-slide">
-            <img src="dist/img/seentesa/cover/4.png" alt="Image 4" />
-            <div class="title-container">
-              <h2 class="text-lg md:text-xl font-bold">Title 4</h2>
-              <p class="text-xs md:text-sm">Subtitle for Image 4</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="dist/img/seentesa/cover/5.png" alt="Image 5" />
-            <div class="title-container">
-              <h2 class="text-lg md:text-xl font-bold">Title 5</h2>
-              <p class="text-xs md:text-sm">Subtitle for Image 5</p>
-            </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="dist/img/seentesa/cover/5.png" alt="Image 5" />
+          <div class="title-container">
+            <h2 class="text-lg md:text-xl font-bold">Title 5</h2>
+            <p class="text-xs md:text-sm">Subtitle for Image 5</p>
           </div>
         </div>
       </div>
-      <button class="mt-6 px-6 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-500 transition">Check Out!</button>
-    </section>
-    <!-- End Carousel -->
+    </div>
+    <button class="mt-6 px-6 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-500 transition">Check
+      Out!</button>
+  </section>
+  <!-- End Carousel -->
 
-    <!-- Calendar -->
-    <section class="bg-black flex justify-center items-center mb-12">
-      <div class="w-full max-w-4xl p-6">
-        <h1 class="text-white text-center text-4xl font-bold mb-12">JADWAL</h1>
-        <div class="bg-pink-600 p-6 rounded-xl">
-          <!-- Card 1 -->
-          <div class="flex items-center justify-between bg-pink-600 p-4 rounded-lg mb-4">
-            <div class="flex items-center gap-4">
-              <div class="text-white text-6xl font-extrabold text-center">
-                15
-                <p class="text-white text-sm font-bold pt-1">April 2025</p>
-              </div>
-              <div>
-                <h2 class="text-white font-bold text-lg">Lorem Ipsum</h2>
-                <p class="text-white text-sm">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat...</p>
-              </div>
+  <!-- Calendar -->
+  <section class="bg-black flex justify-center items-center mb-12">
+    <div class="w-full max-w-4xl p-6">
+      <h1 class="text-white text-center text-4xl font-bolo mb-12">JADWAL</h1>
+      <div class="bg-pink-600 p-6 rounded-xl">
+        <!-- Card 1 -->
+        <div class="flex items-center justify-between bg-pink-600 p-4 rounded-lg mb-4">
+          <div class="flex items-center gap-4">
+            <div class="text-white text-6xl font-extrabold text-center">
+              15
+              <p class="text-white text-sm font-bold pt-1">April 2025</p>
             </div>
-            <button class="bg-yellow-400 text-black px-4 py-2 rounded-lg font-bold">Detail Acara</button>
-          </div>
-          <!-- Card 2 -->
-          <div class="flex items-center justify-between bg-pink-600 p-4 rounded-lg">
-            <div class="flex items-center gap-4">
-              <div class="text-white text-6xl font-extrabold text-center">
-                16
-                <p class="text-white text-sm font-bold pt-1">April 2025</p>
-              </div>
-              <div>
-                <h2 class="text-white font-bold text-lg">Lorem Ipsum</h2>
-                <p class="text-white text-sm">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat...</p>
-              </div>
+            <div>
+              <h2 class="text-white font-bold text-lg">Lorem Ipsum</h2>
+              <p class="text-white text-sm">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                consequat...</p>
             </div>
-            <button class="bg-yellow-400 text-black px-4 py-2 rounded-lg font-bold">Detail Acara</button>
           </div>
+          <button class="bg-yellow-400 text-black px-4 py-2 rounded-lg font-bold">Detail Acara</button>
+        </div>
+        <!-- Card 2 -->
+        <div class="flex items-center justify-between bg-pink-600 p-4 rounded-lg">
+          <div class="flex items-center gap-4">
+            <div class="text-white text-6xl font-extrabold text-center">
+              16
+              <p class="text-white text-sm font-bold pt-1">April 2025</p>
+            </div>
+            <div>
+              <h2 class="text-white font-bold text-lg">Lorem Ipsum</h2>
+              <p class="text-white text-sm">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                consequat...</p>
+            </div>
+          </div>
+          <button class="bg-yellow-400 text-black px-4 py-2 rounded-lg font-bold">Detail Acara</button>
         </div>
       </div>
-    </section>
-    <!-- End Calendar -->
-    <!-- Gallery Section -->
-    <section class="mt-12 text-center items-center justify-center">
-      <h2 class="text-4xl font-bold text-white mb-8">GALLERY</h2>
-      <div class="swiper gallery-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/1.png" alt="Gallery 1" /></div>
-          <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/2.png" alt="Gallery 2" /></div>
-          <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/3.png" alt="Gallery 3" /></div>
-          <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/4.png" alt="Gallery 4" /></div>
-          <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/1.png" alt="Gallery 5" /></div>
-        </div>
+    </div>
+  </section>
+  <!-- End Calendar -->
+  <!-- Gallery Section -->
+  <section class="mt-12 text-center items-center justify-center">
+    <h2 class="text-4xl font-bold text-white mb-8">GALLERY</h2>
+    <div class="swiper gallery-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/1.png" alt="Gallery 1" /></div>
+        <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/2.png" alt="Gallery 2" /></div>
+        <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/3.png" alt="Gallery 3" /></div>
+        <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/4.png" alt="Gallery 4" /></div>
+        <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/1.png" alt="Gallery 5" /></div>
       </div>
-      <button class="mt-6 px-6 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-500 transition">See More</button>
-    </section>
-    <!-- End Gallery -->
+    </div>
+    <button class="mt-6 px-6 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-500 transition">See
+      More</button>
+  </section>
+  <!-- End Gallery -->
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        centeredSlides: true,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-      });
-      var gallerySwiper = new Swiper(".gallery-swiper", {
-        slidesPerView: "auto",
-        spaceBetween: 20,
-        centeredSlides: true,
-        loop: true,
-        autoplay: {
-          delay: 9000,
-          disableOnInteraction: false,
-        },
-      });
-    </script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+    var gallerySwiper = new Swiper(".gallery-swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 9000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+
 </html>
