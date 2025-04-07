@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-adsense-account" content="ca-pub-8851872691835002" />
+    <title>Isola Digital Media</title>
+    <link rel="icon" href="dist/img/Logo/Switch-Black.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="src/input.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8851872691835002" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="bg-black">
+    <div class="h-[300px] w-[300px] bg-blue-500 rounded-full -z-10 right-0 blur-[200px] fixed"></div>
+    <div class="h-[300px] w-[300px] bg-purple-600 scale-100 rounded-full -z-10 bottom-0 blur-[200px] fixed"></div>
+    <!-- Navbar Awal -->
+    <header class="fixed top-0 left-0 w-full backdrop-blur-lg p-5 z-20 shadow-sm">
+      <div class="container mx-auto flex items-center justify-between">
+        <a href="index.html" class="z-30">
+          <img src="dist/img/Logo/Logo IDM.svg" alt="IDM Logo" class="h-6 opacity-75 hover:opacity-100 transition-opacity" />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex gap-6 text-white font-medium">
+          <a href="#about" class="hover:underline transition-colors">About</a>
+          <a href="#department" class="hover:underline transition-colors">Department</a>
+          <a href="seentesa.html" class="hover:underline transition-colors">Seentesa</a>
+          <a href="https://menfess.isoladigitalmedia.com/public/index.php" class="hover:underline transition-colors">IsolaFess</a>
+        </nav>
+
+        <!-- Hamburger Button -->
+        <button id="hamburger" class="md:hidden z-30 p-2 rounded-lg transition-colors" aria-label="Mobile Menu" aria-expanded="false">
+          <div class="w-6 h-6 relative">
+            <span class="hamburger-line absolute left-0 w-full h-0.5 bg-white transition-all duration-300"></span>
+            <span class="hamburger-line absolute left-0 w-full h-0.5 bg-white transition-all duration-300 mt-2"></span>
+            <span class="hamburger-line absolute left-0 w-full h-0.5 bg-white transition-all duration-300 mt-4"></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav id="mobile-menu" class="md:hidden fixed top-16 inset-x-0 h-0 bg-black backdrop-blur-lg overflow-hidden transition-all duration-300" aria-hidden="true">
+        <div class="container mx-auto px-4 py-6 flex flex-col gap-4">
+          <a href="#about" class="text-white hover:underline transition-colors">About</a>
+          <a href="#department" class="text-white hover:underline transition-colors">Department</a>
+          <a href="seentesa.html" class="text-white hover:underline transition-colors">Seentesa</a>
+          <a href="https://menfess.isoladigitalmedia.com/public/index.php" class="text-white hover:underline transition-colors">IsolaFess</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar Akhir -->
+
+    <!-- Breadcrumb -->
+    <section class="py-4 px-6 md:px-16 absolute top-20 w-full z-30 text-white">
+      <div class="container mx-auto text-white text-sm">
+        <ul class="flex items-center space-x-2">
+          <li>
+            <a href="index.html" class="hover:underline hover:text-gray-400">Home</a>
+          </li>
+          <li>/</li>
+          <li>
+            <a href="seentesa.html" class="hover:underline hover:text-gray-400">Seentesa</a>
+          </li>
+          <li>/</li>
+          <li class="text-yellow-600">Karya</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Breadcrumb Akhir -->
+
+    <!-- Hero -->
+    <section id="hero" class="relative min-h-screen bg-black flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div class="container mx-auto text-white text-center z-10">
+        <!-- Seentesa -->
+        <div id="seentesa" class="flex flex-col items-center py-12 sm:py-16 lg:py-24">
+          <!-- Gambar Judul -->
+          <img src="dist/img/seentesa/title/seentesa.png" alt="SEENTESA AKARASA" class="w-full max-w-xl mb-6 sm:mb-8" />
+
+          <!-- Body Text -->
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl font-out">
+            SEENTESA berkembang dengan karakter yang kuat dan konsisten, namun tetap bebas berekspresi. Visual yang diperlihatkan menarik mata, penuh ekspresi dan kian tumbuh bersama audiens. Informasi tidak hanya tersampaikan, namun
+            mengalir dengan cara yang santai, dekat, dan mudah dipahami. Lebih dari sekadar berbeda, SEENTESA hadir untuk dirasakan.
+          </p>
+        </div>
+        <!-- Search box -->
+        <div class="flex flex-wrap gap-4 items-center px-10 py-4 mx-auto">
+          <div id="searchWrapper" class="flex-grow flex relative gap-6">
+            <!-- Tombol Cari dan input -->
+            <button id="searchToggle" class="flex-grow flex items-center justify-center gap-2 py-2 px-5 bg-gray-800 bg-opacity-50 text-white font-chill rounded-2xl focus:outline-none hover:bg-gray-700 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+              <span>Cari</span>
+            </button>
+
+            <input type="text" id="searchInput" placeholder="Cari karya..." class="hidden flex-grow items-center justify-center gap-2 py-2 px-5 bg-gray-800 bg-opacity-50 text-white font-chill rounded-2xl focus:outline-none transition" />
+
+            <!-- Filter -->
+            <div class="relative w-1/3">
+              <button id="filterToggle" class="w-full flex items-center justify-center gap-2 py-2 px-5 bg-gray-800 bg-opacity-50 text-white font-chill rounded-2xl focus:outline-none hover:bg-gray-700 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+                <span>Filter</span>
+              </button>
+
+              <!-- Dropdown pindah ke sini -->
+              <div id="filterMenu" class="hidden absolute z-30 right-0 w-full bg-gray-800 text-white rounded-lg rounded-t-2xl shadow-lg overflow-hidden">
+                <button class="block w-full text-left px-4 py-2 hover:bg-gray-700">Kategori A</button>
+                <button class="block w-full text-left px-4 py-2 hover:bg-gray-700">Kategori B</button>
+                <button class="block w-full text-left px-4 py-2 hover:bg-gray-700">Kategori C</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Hero -->
+
+    <!-- Card Karya Awal -->
+
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
+      <div class="bg-pink-600 hover:brightness-50 transition rounded-xl shadow-md overflow-hidden">
+        <a href="detail-karya-vertikal.html">
+          <img src="dist/img/list karya/Mallomo.png" alt="image" class="w-full object-cover" />
+          <div class="p-6 pb-10 text-white mx-auto">
+            <div class="flex-col justify-between items-center">
+              <div class="flex justify-between">
+                <h1 class="font-bolo text-3xl font-light">Judul</h1>
+                <div>
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="flex justify-between">
+                <h2 class="font-chill text-xl font-medium">orang</h2>
+                <div>
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <br />
+
+            <div class="font-chill">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam consequatur eaque id expedita, quasi nulla qui. Quidem eius ipsum quasi.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    <div class="bg-yellow-300 hover:brightness-50 transition rounded-xl shadow-md overflow-hidden">
+      <a href="detail-karya-vertikal.html">
+        <img src="dist/img/list karya/Mallomo.png" alt="image" class="w-full object-cover" />
+        <div class="p-6 pb-10 text-black mx-auto">
+        <div class="flex-col justify-between items-center">
+          <div class="flex justify-between">
+            <h1 class="font-bolo text-3xl font-light">Judul</h1>
+            <div>
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+              </svg>
+            </button>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <h2 class="font-chill text-xl font-medium">orang</h2>
+            <div>
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+                />
+              </svg>
+            </button>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="font-chill">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam consequatur eaque id expedita, quasi nulla qui. Quidem eius ipsum quasi.</p>
+        </div>
+        </div>
+      </a>
+    </div>
+    <div class="bg-pink-600 hover:brightness-50 transition rounded-xl shadow-md overflow-hidden">
+      <a href="detail-karya-vertikal.html">
+        <img src="dist/img/list karya/Mallomo.png" alt="image" class="w-full object-cover" />
+        <div class="p-6 pb-10 text-white mx-auto">
+        <div class="flex-col justify-between items-center">
+          <div class="flex justify-between">
+            <h1 class="font-bolo text-3xl font-light">Judul</h1>
+            <div>
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+              </svg>
+            </button>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <h2 class="font-chill text-xl font-medium">orang</h2>
+            <div>
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+                />
+              </svg>
+            </button>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="font-chill">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam consequatur eaque id expedita, quasi nulla qui. Quidem eius ipsum quasi.</p>
+        </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="bg-yellow-300 hover:brightness-50 transition rounded-xl shadow-md overflow-hidden">
+      <a href="detail-karya-vertikal.html">
+        <img src="dist/img/list karya/Mallomo.png" alt="image" class="w-full object-cover" />
+        <div class="p-6 pb-10 text-black mx-auto">
+        <div class="flex-col justify-between items-center">
+          <div class="flex justify-between">
+            <h1 class="font-bolo text-3xl font-light">Judul</h1>
+            <div>
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"></svg>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+              </svg>
+            </button>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <h2 class="font-chill text-xl font-medium">orang</h2>
+            <div>
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+                />
+              </svg>
+            </button>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="font-chill">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam consequatur eaque id expedita, quasi nulla qui. Quidem eius ipsum quasi.</p>
+        </div>
+        </div>
+      </a>
+    </div>
+    </section>
+
+    <br /><br /><br />
+
+    <!-- Footer Awal -->
+    <footer class="bg-[#111111] bg-opacity-50">
+      <div class="flex flex-col md:flex-row lg:justify-normal pt-10 pb-20 px-12 lg:px-20 gap-8 lg:gap-20">
+        <div><img src="dist/img/Logo/Logo IDM.svg" alt="" class="h-1/2" /></div>
+        <div class="flex flex-col md:flex-row gap-12 justify-center w-full mx-auto">
+          <div class="flex flex-col text-white">
+            <h1 class="font-plus text-xl font-bold mb-4">Contact Us</h1>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-2 hover:opacity-75">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <a href="mailto:isoladigitalmedia@gmail.com" class="font-plus" target="_blank">isoladigitalmedia@gmail.com</a>
+              </div>
+              <div class="flex gap-2 hover:opacity-75">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <a href="https://g.co/kgs/ocmEj8J" class="font-plus" target="_blank">Fakultas Pendidikan Seni & Desain</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col text-white">
+            <h1 class="font-plus text-xl font-bold mb-4">Social Media</h1>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-2 hover:opacity-75">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <a href="https://www.instagram.com/isoladigitalmedia_/" class="font-plus" target="_blank">Instagram</a>
+              </div>
+              <div class="flex gap-2 hover:opacity-75">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <a href="https://www.linkedin.com/company/isola-digital-media/mycompany/" class="font-plus" target="_blank">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col text-white">
+            <h1 class="font-plus text-xl font-bold mb-4">Department</h1>
+            <div class="flex flex-col gap-2">
+              <a href="Desain.html" class="hover:opacity-75" target="_blank">Design</a>
+              <a href="Multimedia.html" class="hover:opacity-75" target="_blank">Multimedia</a>
+              <a href="Game.html" class="hover:opacity-75" target="_blank">Game</a>
+              <a href="sinema.html" class="hover:opacity-75" target="_blank">Cinematic Photography </a>
+            </div>
+          </div>
+          <div class="flex flex-col text-white">
+            <h1 class="font-plus text-xl font-bold mb-4">Seentesa</h1>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="hover:opacity-75" target="_blank">Homepage</a>
+              <a href="#" class="hover:opacity-75" target="_blank">Karya</a>
+              <a href="#" class="hover:opacity-75" target="_blank">Article</a>
+              <a href="#" class="hover:opacity-75" target="_blank">Calendar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bawah -->
+      <div class="flex justify-center items-center py-5 border-t-2 border-white">
+        <h1 class="font-plus text-white">© Isola Digital Media 2021 All rights reserved.</h1>
+      </div>
+    </footer>
+    <!-- Footer Akhir -->
+    <script src="https://unpkg.com/kursor"></script>
+    <script type="module" src="/dist/js/main.js"></script>
+  </body>
+</html>
