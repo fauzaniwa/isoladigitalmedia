@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-adsense-account" content="ca-pub-8851872691835002" />
+    <title>Cinematic & Photography Departement</title>
+    <link rel="icon" href="dist/img/Logo/Switch-Black.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8851872691835002" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-black">
+    <div class="h-[300px] w-[300px] bg-blue-500 rounded-full z-2 right-0 blur-[300px] md:blur-[200px] fixed"></div>
+    <div class="h-[300px] w-[300px] bg-purple-600 scale-0 md:scale-100 rounded-full z-2 bottom-0 blur-[200px] fixed"></div>
+    <header class="fixed top-0 left-0 w-full backdrop-blur-lg bg-white/60 p-5 z-20 shadow-sm">
+      <div class="container mx-auto flex items-center justify-between">
+        <a href="index.html" class="z-30">
+          <img src="dist/img/Logo/Logo IDM Black.svg" alt="IDM Logo" class="h-6 opacity-75 hover:opacity-100 transition-opacity" />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex gap-6 text-gray-800 font-medium">
+          <a href="#about" class="hover:underline transition-colors">About</a>
+          <a href="#department" class="hover:underline transition-colors">Department</a>
+          <a href="seentesa.html" class="hover:underline transition-colors">Seentesa</a>
+          <a href="https://menfess.isoladigitalmedia.com/public/index.php" class="hover:underline transition-colors">IsolaFess</a>
+        </nav>
+
+        <!-- Hamburger Button -->
+        <button id="hamburger" class="md:hidden z-30 p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Mobile Menu" aria-expanded="false">
+          <div class="w-6 h-6 relative">
+            <span class="hamburger-line absolute left-0 w-full h-0.5 bg-black transition-all duration-300"></span>
+            <span class="hamburger-line absolute left-0 w-full h-0.5 bg-black transition-all duration-300 mt-2"></span>
+            <span class="hamburger-line absolute left-0 w-full h-0.5 bg-black transition-all duration-300 mt-4"></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav id="mobile-menu" class="md:hidden fixed top-16 inset-x-0 h-0 bg-white/95 backdrop-blur-lg overflow-hidden transition-all duration-300" aria-hidden="true">
+        <div class="container mx-auto px-4 py-6 flex flex-col gap-4">
+          <a href="#about" class="text-gray-800 hover:text-black transition-colors">About</a>
+          <a href="#department" class="text-gray-800 hover:text-black transition-colors">Department</a>
+          <a href="seentesa.html" class="text-gray-800 hover:text-black transition-colors">Seentesa</a>
+          <a href="https://menfess.isoladigitalmedia.com/public/index.php" class="text-gray-800 hover:text-black transition-colors">IsolaFess</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="py-4 px-6 md:px-16 absolute top-20 w-full text-white">
+      <div class="container mx-auto text-white text-sm">
+        <ul class="flex items-center space-x-2">
+          <li>
+            <a href="/" class="hover:underline hover:text-gray-400">Home</a>
+          </li>
+          <li>/</li>
+          <li class="text-[#BE3F66]">Design Department</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Breadcrumb Akhir -->
+
+    <div class="h-[300px] w-[300px] bg-blue-500 rounded-full z-2 right-0 blur-[300px] md:blur-[200px] fixed"></div>
+    <div class="h-[300px] w-[300px] bg-purple-600 scale-0 md:scale-100 rounded-full z-2 bottom-0 blur-[200px] fixed"></div>
+
+    <!-- Cover Section -->
+    <section class="max-w-screen-xl mx-auto px-4 pt-24 md:pt-24 mt-10 md:mt-20 flex flex-col items-center">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 lg:gap-16">
+        <!-- Bagian kiri -->
+        <div class="flex flex-col space-y-4 md:w-auto text-center max-md:px-4">
+          <!-- Gambar di atas -->
+          <img src="./dist/img/title/icon-cinema.png" alt="icon desain" class="mx-auto w-auto max-md:max-w-[120px]" />
+          <!-- Teks di bawah gambar -->
+          <p class="text-white text-sm md:text-base">Merekam dan menyajikan realita melalui medium visual bergerak dan diam.</p>
+        </div>
+        <img src="./dist/img/cover/cover sinema.png" alt="cover desain" class="object-cover rounded-xl md:rounded-2xl w-full max-w-[400px] md:max-w-none" />
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="my-24 flex justify-center px-4">
+      <button class="border-2 md:border-2 border-white px-32 py-5 md:px-62 md:py-5 rounded-full font-bold text-lg md:text-2xl text-white hover:border-opacity-75 transition-all duration-300">Our Division</button>
+    </div>
+
+    <!-- Cinema Division -->
+    <section class="max-w-screen-xl mx-auto px-4 py-8 mt-24" alt="Cinema">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8 pb-24">
+        <!-- Bagian kiri (Gambar) -->
+        <div class="md:w-1/2 w-2/3">
+          <img src="./dist/img/cover/cn.png" alt="Deskripsi Gambar" class="w-auto object-cover rounded-2xl" />
+        </div>
+
+        <!-- Bagian kanan (Teks) -->
+        <div class="text-white text-center md:text-left">
+          <h2 class="text-2xl font-bold">Cinematic</h2>
+          <p class="text-base text-gray-300 mt-2">Produksi video/film dengan teknik shooting, lighting, dan editing.</p>
+        </div>
+      </div>
+
+      <!-- Judul -->
+      <div class="flex justify-center mb-8">
+        <img src="./dist/img/title/our worked.png" alt="Our Worked" class="w-64 h-auto" />
+      </div>
+
+      <!-- Grid Karya -->
+      <div class="mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6" id="card-container">
+          <!-- Card Karya -->
+          <div class="p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/Mallomo.png" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/Amat Epin.jpg" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/Mallomo.png" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/Amat Epin.jpg" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="hidden extra-card p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/Cat Story.png" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="hidden extra-card p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/cintya.png" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="hidden extra-card p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/ditha.png" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Tombol Lihat Lebih Banyak -->
+      <div class="mt-12 flex justify-center">
+        <button id="toggleBtn1" class="bg-gradient-to-r from-violet-700 to-blue-500 text-white px-6 py-3 lg:px-26 rounded-xl hover:opacity-70">View More</button>
+      </div>
+    </section>
+    <!-- End  -->
+
+    <!-- Photography Division -->
+    <section class="max-w-screen-xl mx-auto px-4 py-8 mt-24" alt="Photography">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8 pb-24">
+        <!-- Bagian kiri (Gambar) -->
+        <div class="md:w-1/2 w-2/3">
+          <img src="./dist/img/cover/ph.png" alt="Deskripsi Gambar" class="w-auto object-cover rounded-2xl" />
+        </div>
+
+        <!-- Bagian kanan (Teks) -->
+        <div class="text-white text-center md:text-left">
+          <h2 class="text-2xl font-bold">Photography</h2>
+          <p class="text-base text-gray-300 mt-2">Eksplorasi komposisi visual melalui foto seni/dokumenter.</p>
+        </div>
+      </div>
+
+      <!-- Judul -->
+      <div class="flex justify-center mb-8">
+        <img src="./dist/img/title/our worked.png" alt="Our Worked" class="w-64 h-auto" />
+      </div>
+
+      <!-- Grid Karya -->
+      <div class="mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6" id="card-container">
+          <!-- Card Karya -->
+          <div class="p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/trisha.png" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/Mallomo.png" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/Amat Epin.jpg" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/Mallomo.png" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/Amat Epin.jpg" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="hidden extra-card p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/Cat Story.png" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="hidden extra-card p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/cintya.png" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+          <div class="hidden extra-card p-4 group">
+            <div class="overflow-hidden rounded-lg">
+              <img src="./dist/img/list karya/vania.png" alt="Judul Karya" class="w-full h-auto object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-110" />
+            </div>
+            <h3 class="text-lg font-bold mt-4 text-white">Judul Karya</h3>
+            <p class="text-base text-gray-400">Nama Artist</p>
+            <button class="mt-4 flex items-center justify-center bg-gradient-to-r from-violet-700 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-70">
+              <img src="./dist/img/icon/Instagram.png" alt="Icon" class="w-5 h-5 mr-2" />
+              Commission
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Tombol Lihat Lebih Banyak -->
+      <div class="mt-12 flex justify-center">
+        <button id="toggleBtn2" class="bg-gradient-to-r from-violet-700 to-blue-500 text-white px-6 py-3 lg:px-26 rounded-xl hover:opacity-70">View More</button>
+      </div>
+    </section>
+    <!-- End  -->
+
+    <!-- Footer Awal -->
+    <footer class="bg-[#111111]">
+      <div class="flex flex-col md:flex-row lg:justify-normal pt-10 pb-20 px-12 lg:px-20 gap-8 lg:gap-20">
+        <div><img src="dist/img/Logo/Logo IDM.svg" alt="" class="h-1/2" /></div>
+        <div class="flex flex-col md:flex-row gap-12">
+          <div class="flex flex-col text-white">
+            <h1 class="font-plus text-xl font-bold mb-4">Contact Us</h1>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-2 hover:opacity-75">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <a href="mailto:isoladigitalmedia@gmail.com" class="font-plus" target="_blank">isoladigitalmedia@gmail.com</a>
+              </div>
+              <div class="flex gap-2 hover:opacity-75">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <a href="https://g.co/kgs/ocmEj8J" class="font-plus" target="_blank">Fakultas Pendidikan Seni & Desain</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col text-white">
+            <h1 class="font-plus text-xl font-bold mb-4">Social Media</h1>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-2 hover:opacity-75">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <a href="https://www.instagram.com/isoladigitalmedia_/" class="font-plus" target="_blank">Instagram</a>
+              </div>
+              <div class="flex gap-2 hover:opacity-75">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <a href="https://www.linkedin.com/company/isola-digital-media/mycompany/" class="font-plus" target="_blank">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col text-white pl-5">
+            <h1 class="font-plus text-xl font-bold mb-4">Department</h1>
+            <div class="flex flex-col gap-2">
+              <a href="Desain.html" class="hover:opacity-75" target="_blank">Design</a>
+              <a href="Multimedia.html" class="hover:opacity-75" target="_blank">Multimedia</a>
+              <a href="Game.html" class="hover:opacity-75" target="_blank">Game</a>
+              <a href="sinema.html" class="hover:opacity-75" target="_blank">Cinematic Photography </a>
+            </div>
+          </div>
+          <div class="flex flex-col text-white pl-5">
+            <h1 class="font-plus text-xl font-bold mb-4">Seentesa</h1>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="hover:opacity-75" target="_blank">Homepage</a>
+              <a href="#" class="hover:opacity-75" target="_blank">Karya</a>
+              <a href="#" class="hover:opacity-75" target="_blank">Article</a>
+              <a href="#" class="hover:opacity-75" target="_blank">Calendar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bawah -->
+      <div class="flex justify-center items-center py-5 border-t-2 border-white">
+        <h1 class="font-plus text-white">© Isola Digital Media 2021 All rights reserved.</h1>
+      </div>
+    </footer>
+    <!-- Footer Akhir -->
+    <script src="https://unpkg.com/kursor"></script>
+    <script src="dist/js/script.js"></script>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
