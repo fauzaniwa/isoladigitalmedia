@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" /> -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8851872691835002" crossorigin="anonymous"></script>
@@ -107,22 +107,22 @@
 
     <!-- image -->
     <br /><br />
-    <section id="" class="flex justify-center items-start gap-6 p-10 min-h-screen flex-wrap">
+    <section id="" class="flex justify-center items-start gap-6 px-10 min-h-screen flex-wrap">
       <!-- Desktop Mode -->
-      <div class="w-[350px] h-[500px] rounded-3xl overflow-hidden">
+      <div class="w-[650px] h-[800px] rounded-3xl overflow-hidden">
         <img src="/dist/img/list karya/saampel potrait.jpg" alt="" class="w-full h-full object-cover lightbox-trigger" />
       </div>
       <div class="w-full md:w-auto">
-        <div class="hidden md:flex flex-col justify-start items-start h-[500px] gap-4 md:flex-nowrap">
-          <div class="w-[250px] h-[180px] rounded-2xl overflow-hidden">
+        <div class="hidden md:flex flex-col justify-start items-start h-[800px] gap-4 md:flex-nowrap">
+          <div class="w-[350px] h-[500px] rounded-2xl overflow-hidden">
             <img src="/dist/img/list karya/saampel potrait.jpg" alt="" class="w-full h-full object-cover lightbox-trigger" />
           </div>
 
-          <div class="w-[250px] h-[180px] rounded-2xl overflow-hidden">
+          <div class="w-[350px] h-[500px] rounded-2xl overflow-hidden">
             <img src="/dist/img/list karya/saampel potrait.jpg" alt="" class="w-full h-full object-cover lightbox-trigger" />
           </div>
 
-          <div class="w-[250px] h-[180px] rounded-2xl overflow-hidden">
+          <div class="w-[350px] h-[500px] rounded-2xl overflow-hidden">
             <img src="/dist/img/list karya/saampel potrait.jpg" alt="" class="w-full h-full object-cover lightbox-trigger" />
           </div>
         </div>
@@ -285,15 +285,20 @@
     <hr class="outline-1 opacity-35" />
     <br /><br /><br />
 
-    <!-- Comment Section -->
-    <section class="flex flex-col justify-center items-center h-full text-white">
-      <h1 class="font-chill text-3xl font-bold">Comments</h1>
-      <br />
-      <textarea type="text" id="searchInput" placeholder="Tulis Komentar..." class="mx-auto w-11/12 py-4 px-5 h-40 text-base bg-gray-800 bg-opacity-50 text-white font-chill rounded-2xl focus:outline-none transition resize-none"></textarea>
-      <br />
-      <button class="bg-yellow-300 hover:bg-yellow-200 transition-colors text-black py-2 px-10 rounded-2xl font-chill font-medium">Kirim</button>
+    <!-- Comment Section Full Length -->
+    <section class="flex flex-col justify-center items-center w-full text-white py-8">
+      <h1 class="font-chill text-3xl font-bold mb-6">Comments</h1>
+      <form class="w-11/12 space-y-4">
+        <!-- Name Input -->
+        <input type="text" placeholder="Nama Anda" class="w-full py-3 px-5 bg-gray-800 bg-opacity-50 text-white font-chill rounded-2xl focus:outline-none transition" />
+        <!-- Email Input -->
+        <input type="email" placeholder="Email Anda" class="w-full py-3 px-5 bg-gray-800 bg-opacity-50 text-white font-chill rounded-2xl focus:outline-none transition" />
+        <!-- Comment Textarea -->
+        <textarea placeholder="Tulis Komentar..." class="w-full py-4 px-5 h-40 text-base bg-gray-800 bg-opacity-50 text-white font-chill rounded-2xl focus:outline-none transition resize-none"></textarea>
+        <!-- Submit Button -->
+        <button type="submit" class="w-full bg-yellow-300 hover:bg-yellow-200 transition-colors text-black py-3 rounded-2xl font-chill font-medium">Kirim</button>
+      </form>
     </section>
-    <!-- Comment Section akhir -->
 
     <br /><br /><br />
 
@@ -522,10 +527,9 @@
       </div>
     </footer>
     <!-- Footer Akhir -->
-    <script src="https://unpkg.com/kursor"></script>
     <script type="module" src="/dist/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script src="https://unpkg.com/kursor"></script>
     <script>
       const swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,

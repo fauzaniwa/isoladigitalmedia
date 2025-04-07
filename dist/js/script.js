@@ -7,7 +7,7 @@ function onToggleMenu(e) {
 
 // Kursor
 new kursor({
-  type: 1,
+  type: 0,
   removeDefaultCursor: true,
   color: "#ffffff",
 });

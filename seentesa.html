@@ -8,7 +8,7 @@
     <link rel="icon" href="dist/img/Logo/Switch-Black.svg" type="image/x-icon" />
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="/src/input.css" />
-    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" /> -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8851872691835002" crossorigin="anonymous"></script>
@@ -17,7 +17,7 @@
       /* Gallery Carousel */
       .gallery-swiper {
         width: 100%;
-        max-width: 1900px;
+        max-width: 2000px;
         height: 400px;
       }
 
@@ -113,7 +113,7 @@
     <!-- Akhir Hero -->
 
     <!-- Carousel -->
-    <section class="flex flex-col items-center text-center max-h-screen py-24 justify-center text-white">
+    <section class="flex flex-col items-center text-center max-h-screen justify-center pt-40 pb-40 text-white">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -159,7 +159,7 @@
     <!-- End Carousel -->
 
     <!-- Calendar -->
-    <section class="bg-black flex justify-center items-center mb-24">
+    <section class="bg-black flex justify-center items-center mb-24 min-screen-xl">
       <div class="w-full max-w-4xl p-6">
         <h1 class="text-white text-center text-6xl font-bolo mb-6">JADWAL</h1>
         <div class="bg-pink-600 p-6 rounded-xl">
@@ -196,7 +196,7 @@
     </section>
     <!-- End Calendar -->
     <!-- Article -->
-    <section class="bg-black text-white py-10">
+    <section class="bg-black text-white py-10 pb-40">
       <div class="container mx-auto text-center">
         <h1 class="text-white text-center text-6xl font-bolo mb-6">Article</h1>
         <div class="grid md:grid-cols-3 gap-6 px-4" id="card-container">
@@ -272,20 +272,71 @@
     <!-- Gallery Section -->
     <section class="mt-12 text-center items-center justify-center pb-40">
       <h1 class="text-white text-center text-6xl font-bolo mb-6">Gallery</h1>
-      <div class="swiper gallery-swiper">
+      <div class="swiper gallery-swiper items-center justify-center">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/1.png" alt="Gallery 1" /></div>
           <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/2.png" alt="Gallery 2" /></div>
           <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/3.png" alt="Gallery 3" /></div>
           <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/4.png" alt="Gallery 4" /></div>
           <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/1.png" alt="Gallery 5" /></div>
+          <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/4.png" alt="Gallery 4" /></div>
+          <div class="swiper-slide"><img src="./dist/img/seentesa/gallery/4.png" alt="Gallery 4" /></div>
         </div>
       </div>
       <!-- BUTTON -->
       <a href="gallery.html" class="mt-10 bg-gradient-to-r from-amber-200 to-yellow-500 text-black font-chill text-lg font-bold px-4 py-3 lg:px-16 rounded-3xl hover:opacity-70 transition inline-block">Check Out!</a>
     </section>
     <!-- End Gallery -->
-
+    <!-- Media Partner -->
+    <section class="py-12 pb-40">
+      <div class="container mx-auto px-4">
+        <h1 class="text-white text-center text-6xl font-bolo mb-6">Sponsor & Media Partner</h1>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          <!-- Item Logo 1 -->
+          <div class="bg-white p-4 flex items-center justify-center rounded-md shadow hover:shadow-lg transition duration-300">
+            <img src="/dist/img/Logo/Logo IDM Black.svg" alt="Logo 1" class="max-h-12 object-contain" />
+          </div>
+          <!-- Item Logo 2 -->
+          <div class="bg-white p-4 flex items-center justify-center rounded-md shadow hover:shadow-lg transition duration-300">
+            <img src="/dist/img/Logo/Logo IDM Black.svg" alt="Logo 2" class="max-h-12 object-contain" />
+          </div>
+          <!-- Item Logo 3 -->
+          <div class="bg-white p-4 flex items-center justify-center rounded-md shadow hover:shadow-lg transition duration-300">
+            <img src="/dist/img/Logo/Logo IDM Black.svg" alt="Logo 3" class="max-h-12 object-contain" />
+          </div>
+          <!-- Item Logo 4 -->
+          <div class="bg-white p-4 flex items-center justify-center rounded-md shadow hover:shadow-lg transition duration-300">
+            <img src="/dist/img/Logo/Logo IDM Black.svg" alt="Logo 4" class="max-h-12 object-contain" />
+          </div>
+          <!-- Item Logo 5 -->
+          <div class="bg-white p-4 flex items-center justify-center rounded-md shadow hover:shadow-lg transition duration-300">
+            <img src="/dist/img/Logo/Logo IDM Black.svg" alt="Logo 5" class="max-h-12 object-contain" />
+          </div>
+          <!-- Item Logo 6 -->
+          <div class="bg-white p-4 flex items-center justify-center rounded-md shadow hover:shadow-lg transition duration-300">
+            <img src="/dist/img/Logo/Logo IDM Black.svg" alt="Logo 6" class="max-h-12 object-contain" />
+          </div>
+          <!-- Item Logo 6 -->
+          <div class="bg-white p-4 flex items-center justify-center rounded-md shadow hover:shadow-lg transition duration-300">
+            <img src="/dist/img/Logo/Logo IDM Black.svg" alt="Logo 6" class="max-h-12 object-contain" />
+          </div>
+          <!-- Item Logo 6 -->
+          <div class="bg-white p-4 flex items-center justify-center rounded-md shadow hover:shadow-lg transition duration-300">
+            <img src="/dist/img/Logo/Logo IDM Black.svg" alt="Logo 6" class="max-h-12 object-contain" />
+          </div>
+          <!-- Item Logo 6 -->
+          <div class="bg-white p-4 flex items-center justify-center rounded-md shadow hover:shadow-lg transition duration-300">
+            <img src="/dist/img/Logo/Logo IDM Black.svg" alt="Logo 6" class="max-h-12 object-contain" />
+          </div>
+          <!-- Item Logo 6 -->
+          <div class="bg-white p-4 flex items-center justify-center rounded-md shadow hover:shadow-lg transition duration-300">
+            <img src="/dist/img/Logo/Logo IDM Black.svg" alt="Logo 6" class="max-h-12 object-contain" />
+          </div>
+          <!-- Tambahkan item logo tambahan sesuai kebutuhan -->
+        </div>
+      </div>
+    </section>
+    <!-- End Media Partner -->
     <!-- Footer Awal -->
     <footer class="bg-[#111111]">
       <div class="flex flex-col md:flex-row lg:justify-normal pt-10 pb-20 px-12 lg:px-20 gap-8 lg:gap-20">
@@ -357,7 +408,6 @@
       </div>
     </footer>
     <!-- Footer Akhir -->
-
     <script src="https://unpkg.com/kursor"></script>
     <script src="dist/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -370,6 +420,11 @@
         autoplay: {
           delay: 9000,
           disableOnInteraction: false,
+        },
+        on: {
+          init: function () {
+            document.querySelector(".gallery-swiper").style.visibility = "visible";
+          },
         },
       });
     </script>
