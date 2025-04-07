@@ -2,9 +2,11 @@
 <html>
 
 <head>
+  <title>Isola Digital Media</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="src/input.css">
   <style>
     .masonry {
       column-gap: 1rem;
@@ -19,41 +21,62 @@
 </head>
 
 <body class="bg-black p-4">
-  <header class="fixed top-0 left-0 w-full backdrop-blur-lg bg-white/60 p-6 z-20">
+  <div class="h-[300px] w-[300px] bg-blue-500 rounded-full -z-10 right-0 blur-[200px] fixed"></div>
+  <div class="h-[300px] w-[300px] bg-purple-600 scale-100 rounded-full -z-10 bottom-0 blur-[200px] fixed">
+  </div>
+  <!-- Navbar Awal -->
+  <header class="fixed top-0 left-0 w-full backdrop-blur-lg p-5 z-20 shadow-sm">
     <div class="container mx-auto flex items-center justify-between">
-      <a href="#hero">
-        <img src="dist/img/Logo/Logo IDM Black.svg" alt="" class="h-6 opacity-75 hover:opacity-100" />
+      <a href="index.html" class="z-30">
+        <img src="dist/img/Logo/Logo IDM.svg" alt="IDM Logo"
+          class="h-6 opacity-75 hover:opacity-100 transition-opacity" />
       </a>
-      <nav class="hidden md:flex space-x-6 text-black font-medium">
-        <a href="#" class="hover:underline">About</a>
-        <a href="#" class="hover:underline">Department</a>
-        <a href="#" class="hover:underline">Seentesa</a>
-        <a href="#" class="hover:underline">IsolaFess</a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex gap-6 text-white font-medium">
+        <a href="#about" class="hover:underline transition-colors">About</a>
+        <a href="#department" class="hover:underline transition-colors">Department</a>
+        <a href="seentesa.html" class="hover:underline transition-colors">Seentesa</a>
+        <a href="https://menfess.isoladigitalmedia.com/public/index.php"
+          class="hover:underline transition-colors">IsolaFess</a>
       </nav>
 
-      <!-- Tombol Hamburger -->
-      <button id="hamburger" name="hamburger" type="button" class="p-1 block absolute md:hidden">
-        <span class="hamburger-line transition duration-300 ease-in-out origin-top-right"></span>
-        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-right"></span>
+      <!-- Hamburger Button -->
+      <button id="hamburger" class="md:hidden z-30 p-2 rounded-lg transition-colors" aria-label="Mobile Menu"
+        aria-expanded="false">
+        <div class="w-6 h-6 relative">
+          <span class="hamburger-line absolute left-0 w-full h-0.5 bg-white transition-all duration-300"></span>
+          <span class="hamburger-line absolute left-0 w-full h-0.5 bg-white transition-all duration-300 mt-2"></span>
+          <span class="hamburger-line absolute left-0 w-full h-0.5 bg-white transition-all duration-300 mt-4"></span>
+        </div>
       </button>
     </div>
 
-    <!-- Mobile Menu -->
-    <nav id="nav-menu" class="hidden flex-col items-center text-white font-medium bg-black/80 p-4 space-y-4">
-      <a href="#" class="hover:underline">About</a>
-      <a href="#" class="hover:underline">Department</a>
-      <a href="#" class="hover:underline">Seentesa</a>
-      <a href="#" class="hover:underline">IsolaFess</a>
+    <!-- Mobile Navigation -->
+    <nav id="mobile-menu"
+      class="md:hidden fixed top-16 inset-x-0 h-0 bg-black backdrop-blur-lg overflow-hidden transition-all duration-300"
+      aria-hidden="true">
+      <div class="container mx-auto px-4 py-6 flex flex-col gap-4">
+        <a href="#about" class="text-white hover:underline transition-colors">About</a>
+        <a href="#department" class="text-white hover:underline transition-colors">Department</a>
+        <a href="seentesa.html" class="text-white hover:underline transition-colors">Seentesa</a>
+        <a href="https://menfess.isoladigitalmedia.com/public/index.php"
+          class="text-white hover:underline transition-colors">IsolaFess</a>
+      </div>
     </nav>
   </header>
+  <!-- Navbar Akhir -->
 
   <!-- Breadcrumb -->
   <section class="py-4 px-6 md:px-16 pt-28 flex top-20 w-full z-30 text-white">
     <div class="container mx-auto text-white text-sm">
-      <ul class="flex items-center space-x-2">
+      <ul class="flex flex-wrap items-center space-x-2">
         <li>
-          <a href="/" class="hover:underline hover:text-gray-400">Home</a>
+          <a href="/" class="hover:underline hover:text-gray-400">Homepage</a>
+        </li>
+        <li>/</li>
+        <li>
+          <a href="/seentesa.html" class="hover:underline hover:text-gray-400">Seentesa</a>
         </li>
         <li>/</li>
         <li class="text-yellow-600">Galeri</li>
@@ -63,12 +86,18 @@
   <!-- Breadcrumb Akhir -->
 
 
-  <h1 class="pt-5 text-3xl mb-6 text-center text-white font-bolo">GALERI</h1>
-  <div id="gallery" class="flex gap-4"></div>
+  <div class="flex justify-center items-center">
+    <h1 class="text-4xl text-white font-bolo">GALERI</h1>
+  </div>
+  <br><br>
+  <div id="gallery" class="flex gap-4">
+
+  </div>
+
   <div id="sentinel" class="h-10"></div>
+
   <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 items-center justify-center z-50 hidden">
     <img id="lightbox-img" class="w-auto max-w-[90vw] max-h-[80vh] rounded-lg shadow-2xl object-contain" />
-
   </div>
 
 

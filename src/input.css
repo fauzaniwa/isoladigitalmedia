@@ -28,6 +28,15 @@
   }
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+  display:;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
 .animate-fade-in {
   animation: fadeIn 0.5s ease-out forwards;
 }
@@ -70,7 +79,7 @@
   z-index: 10;
 }
 
-.swiper-slide:not(.swiper-slide-active) {
+#rekomendasi .swiper-slide:not(.swiper-slide-active) {
   opacity: 0.5;
 }
 

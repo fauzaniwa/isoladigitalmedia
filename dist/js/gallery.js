@@ -27,7 +27,7 @@ async function fetchImages(gallery, accessKey) {
   const placeholders = Array.from({ length: 12 }, (_, idx) => {
     const colIndex = idx % columns.length;
     const placeholder = document.createElement("div");
-    placeholder.className = "w-full h-48 bg-gray-300 rounded-lg animate-pulse";
+    placeholder.className = "w-full h-48 bg-grey-300 rounded-lg animate-pulse";
     columns[colIndex].appendChild(placeholder);
     return placeholder;
   });
@@ -42,7 +42,7 @@ async function fetchImages(gallery, accessKey) {
         const imageEl = document.createElement("img");
         imageEl.src = img.urls.small;
         imageEl.alt = img.alt_description || "Unsplash Image";
-        imageEl.className = "w-full rounded-lg shadow-lg hover:opacity-80 transition";
+        imageEl.className = "w-full rounded-lg shadow-lg hover:opacity-80 transition lightbox-trigger";
         columns[colIndex].appendChild(imageEl);
       });
 
