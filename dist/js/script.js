@@ -92,6 +92,7 @@ function initSwiperCarousel() {
 document.addEventListener("DOMContentLoaded", () => {
   initSwiperCarousel();
   initHamburgerMenu(); // kalau masih dipakai juga
+  initAboutSlideshow();
 });
 
 function initGallerySwiper() {
